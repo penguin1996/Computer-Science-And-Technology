@@ -1,52 +1,52 @@
 #include<stdio.h>
-
+ 
 typedef int ElemType;
-
-/*¶¨Òå¹²ÏíÕ»*/
+ 
+/*å®šä¹‰å…±äº«æ ˆ*/
 #define MaxSize 10
 typedef struct{
 	ElemType data[MaxSize];
 	ElemType top0;
 	ElemType top1;
 }SharedStack;
-
-/*³õÊ¼»¯*/
+ 
+/*åˆå§‹åŒ–*/
 void InitStack(SharedStack &S){
-	S.top0 = -1;			//³õÊ¼»¯Õ»¶¥Ö¸Õë
+	S.top0 = -1;			//åˆå§‹åŒ–æ ˆé¡¶æŒ‡é’ˆ
 	S.top1 = MaxSize;
 }
-
-/*ÅĞ¿Õ*/
+ 
+/*åˆ¤ç©º*/
 bool StackEmpty(SharedStack &S){
 	if(S.top0 == -1 && S.top1 == MaxSize)
 		return true;
 	else
 		return false;
 }
-
-/*Èë0ºÅÕ»*/
+ 
+/*å…¥0å·æ ˆ*/
 bool PushStack0(SharedStack &S,ElemType x){
 	if(S.top0+1 == S.top1)
-		return false;			//ÅĞ¶ÏÕ»Âú
+		return false;			//åˆ¤æ–­æ ˆæ»¡
 	else
-		S.data[++S.top0] = x;	//Ö¸Õë¼Ó1£¬ÔÙÈëÕ»
+		S.data[++S.top0] = x;	//æŒ‡é’ˆåŠ 1ï¼Œå†å…¥æ ˆ
 	return true;
 }
-
-/*Èë1ºÅÕ»*/
+ 
+/*å…¥1å·æ ˆ*/
 bool PushStack1(SharedStack &S,ElemType x){
 	if(S.top0+1 == S.top1)
-		return -1;			//ÅĞ¶ÏÕ»Âú
+		return -1;			//åˆ¤æ–­æ ˆæ»¡
 	else
-		S.data[--S.top1] = x;	//Ö¸Õë¼õ1£¬ÔÙÈëÕ»
+		S.data[--S.top1] = x;	//æŒ‡é’ˆå‡1ï¼Œå†å…¥æ ˆ
 	return true;
 }
-
+ 
 int PopStack(ElemType x){
 	
 	return x;
 } 
-
+ 
 int main(){
 	
 	SharedStack S;
