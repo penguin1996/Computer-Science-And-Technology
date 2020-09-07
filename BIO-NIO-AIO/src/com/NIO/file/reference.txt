@@ -1,0 +1,10 @@
+https://blog.csdn.net/qq_46225886/article/details/107499933
+1. 概述
+1.1 翻译翻译？什么叫NIO？
+1.2 Buffer简介
+1.2.1 写模式
+1.2.2 读模式到写模式的两种切换
+1.3 Channel简介
+1.3.1 几个重要的Channel
+2. 文件拷贝实战
+3. Selector概述

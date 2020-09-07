@@ -1,7 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="52b017fc-cefc-4579-9709-a7184418ef34" name="Default Changelist" comment="" />
+    <list default="true" id="52b017fc-cefc-4579-9709-a7184418ef34" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../../BIO-NIO-AIO/src/com/AIO/chat/reference.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../BIO-NIO-AIO/src/com/AIO/sample/Client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../BIO-NIO-AIO/src/com/AIO/sample/Server.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../BIO-NIO-AIO/src/com/AIO/sample/reference.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../BIO-NIO-AIO/src/com/BIO/chat/client/ChatClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../BIO-NIO-AIO/src/com/BIO/chat/client/UserInputHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../BIO-NIO-AIO/src/com/BIO/chat/reference.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../BIO-NIO-AIO/src/com/BIO/chat/server/ChatHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../BIO-NIO-AIO/src/com/BIO/chat/server/ChatServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../BIO-NIO-AIO/src/com/BIO/sample/Client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../BIO-NIO-AIO/src/com/BIO/sample/Reference.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../BIO-NIO-AIO/src/com/BIO/sample/Server.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../BIO-NIO-AIO/src/com/NIO/chat/client/ChatClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../BIO-NIO-AIO/src/com/NIO/chat/client/UserInputHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../BIO-NIO-AIO/src/com/NIO/chat/reference.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../BIO-NIO-AIO/src/com/NIO/chat/server/ChatServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../BIO-NIO-AIO/src/com/NIO/file/FileCopyDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../BIO-NIO-AIO/src/com/NIO/file/reference.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Jdk8/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Jdk8/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Jdk8/src/com/source/java/io/Reader.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Jdk8/src/com/source/java/io/Reader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,12 +38,17 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
   <component name="ProjectId" id="1gtDkSv2iS6XK2HoYsD453BFPKJ" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="D:/Project/Computer-Science-And-Technology-/Jdk8" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -149,11 +177,26 @@
       <workItem from="1599360547769" duration="2836000" />
       <workItem from="1599376699500" duration="598000" />
       <workItem from="1599440585376" duration="1513000" />
+      <workItem from="1599442478070" duration="602000" />
+      <workItem from="1599466171767" duration="1379000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -219,7 +262,7 @@
           <option name="timeStamp" value="14" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
-          <url>file://D:/Project/Java/Jdk8/src/com/source/java/lang/Runtime.java</url>
+          <url>file://$PROJECT_DIR$/../../../Java/Jdk8/src/com/source/java/lang/Runtime.java</url>
           <line>687</line>
           <properties class="java.lang.Runtime" method="gc" />
           <option name="timeStamp" value="16" />

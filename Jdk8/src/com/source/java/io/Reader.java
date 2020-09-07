@@ -25,7 +25,6 @@
 
 package java.io;
 
-
 /**
  * Abstract class for reading character streams.  The only methods that a
  * subclass must implement are read(char[], int, int) and close().  Most
