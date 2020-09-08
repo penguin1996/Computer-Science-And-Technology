@@ -1,4 +1,4 @@
-package com.GC;
+package src.com.GC;
 
 /**
  * 此代码演示了两点：

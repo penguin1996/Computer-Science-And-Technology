@@ -757,7 +757,7 @@ public class ArrayList<E> extends AbstractList<E>
         // Write out element count, and any hidden stuff
         int expectedModCount = modCount;
         s.defaultWriteObject();
-
+        //将数组中有效元素进行序列化
         // Write out size as capacity for behavioural compatibility with clone()
         s.writeInt(size);
 
@@ -781,7 +781,7 @@ public class ArrayList<E> extends AbstractList<E>
 
         // Read in size, and any hidden stuff
         s.defaultReadObject();
-
+        //将数组中有效元素反序列化
         // Read in capacity
         s.readInt(); // ignored
 
