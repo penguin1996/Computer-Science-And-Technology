@@ -16,7 +16,6 @@
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Test/FOUR/DeleteMostTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Test/FOUR/DeleteMostTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/FOUR/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/com/FOUR/Main.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -69,7 +68,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.MargeList">
+  <component name="RunManager" selected="Application.main">
     <configuration name="DeleteMostTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
       <option name="MAIN_CLASS_NAME" value="Test.FOUR.DeleteMostTest" />
@@ -77,21 +76,6 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="Test.FOUR.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MargeList" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
-      <option name="MAIN_CLASS_NAME" value="Test.ONE.MargeList" />
-      <module name="farben" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Test.ONE.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -119,11 +103,9 @@
     <list>
       <item itemvalue="Application.main" />
       <item itemvalue="Application.DeleteMostTest" />
-      <item itemvalue="Application.MargeList" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.MargeList" />
         <item itemvalue="Application.DeleteMostTest" />
       </list>
     </recent_temporary>
@@ -147,7 +129,7 @@
       <workItem from="1599440585376" duration="1513000" />
       <workItem from="1599442478070" duration="602000" />
       <workItem from="1599466171767" duration="2669000" />
-      <workItem from="1599525279725" duration="2665000" />
+      <workItem from="1599525279725" duration="2373000" />
     </task>
     <servers />
   </component>
