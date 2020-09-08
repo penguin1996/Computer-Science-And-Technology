@@ -72,11 +72,11 @@
   <component name="RunManager" selected="Application.MargeList">
     <configuration name="DeleteMostTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
-      <option name="MAIN_CLASS_NAME" value="Test.FOUR.DeleteMostTest" />
+      <option name="MAIN_CLASS_NAME" value="src.Test.FOUR.DeleteMostTest" />
       <module name="farben" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Test.FOUR.*" />
+          <option name="PATTERN" value="src.Test.FOUR.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>

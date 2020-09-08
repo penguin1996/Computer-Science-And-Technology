@@ -1,4 +1,4 @@
-package Test.FOUR;
+package src.Test.FOUR;
 
 import com.FOUR.MostCharAndNum;
 
