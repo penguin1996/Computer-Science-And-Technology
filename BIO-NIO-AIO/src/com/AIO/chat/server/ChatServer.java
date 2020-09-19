@@ -14,6 +14,8 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
+import java.util.concurrent.Future;
+import java.util.concurrent.FutureTask;
 
 public class ChatServer {
 
@@ -27,6 +29,9 @@ public class ChatServer {
     private List<ClientHandler> connectedClients;
     private Charset charset = StandardCharsets.UTF_8;
     private int port;
+    Future future;
+    FutureTask futureTask;
+    CompletionHandler completionHandler;
 
     public ChatServer(int port) {
         this.port = port;

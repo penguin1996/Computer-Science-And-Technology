@@ -13,9 +13,12 @@ int Partitions(int a[], int low, int high){
 		a[high] = a[low]; //将大于基准值的元素移动到右端
 	}
 	
-	a[low] = pivot;
+	//由于最后low和high是指向数组的同一个下标，所以low和high是相同的
+	//a[low] = pivot;
+	a[high] = pivot;
 	
-	return low; //返回存放基准值的最终位置
+	//return low; //返回存放基准值的最终位置
+	return high;
 }
 
 void QuickSort(int a[], int low, int high){

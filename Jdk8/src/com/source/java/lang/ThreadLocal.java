@@ -123,6 +123,8 @@ public class ThreadLocal<T> {
      *
      * @return the initial value for this thread-local
      */
+    //该方法会返回当前线程对应的“初始值”，这是一个延迟加载的方法，只有在调用get方法的时候才会触发
+    //当线程第一次使用get方法访问变量时，将调用此方法，除非线程先调用了set方法，这种情况下，不会为线程调用身来的initalValue方法
     protected T initialValue() {
         return null;
     }
@@ -157,11 +159,15 @@ public class ThreadLocal<T> {
      * @return the current thread's value of this thread-local
      */
     public T get() {
+        //获取当前线程
         Thread t = Thread.currentThread();
+        //获取ThreadLocalMap,每个线程都拥有的成员变量
         ThreadLocalMap map = getMap(t);
         if (map != null) {
+            //this表示将当前的ThreadLocal对象作为key获取对应的value对象
             ThreadLocalMap.Entry e = map.getEntry(this);
             if (e != null) {
+                //result为我们的目标对象
                 @SuppressWarnings("unchecked")
                 T result = (T)e.value;
                 return result;
@@ -308,9 +314,11 @@ public class ThreadLocal<T> {
         static class Entry extends WeakReference<ThreadLocal<?>> {
             /** The value associated with this ThreadLocal. */
             Object value;
-
+            //可能导致内存泄漏
             Entry(ThreadLocal<?> k, Object v) {
+                //弱引用
                 super(k);
+                //强引用
                 value = v;
             }
         }
