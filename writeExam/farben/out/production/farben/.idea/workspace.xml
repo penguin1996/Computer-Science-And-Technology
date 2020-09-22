@@ -1,15 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="52b017fc-cefc-4579-9709-a7184418ef34" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../../Reflection" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/farben/src/Test/FOUR/DeleteMostTest.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/farben/src/com/GC/CommandLineParameter.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/GC/CommandLineParameter.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/GC/CommandLineParameter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/farben/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/farben/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/farben/Test/FOUR/DeleteMostTest.class" beforeDir="false" />
+    <list default="true" id="83139aca-626a-4c54-84ad-969add675042" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/src/com/ONE/Node.java" beforeDir="false" afterPath="$PROJECT_DIR$/com/ONE/Node.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,39 +10,20 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Class" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
-  <component name="ProjectId" id="1gtDkSv2iS6XK2HoYsD453BFPKJ" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
-    <ConfirmationsSetting value="2" id="Add" />
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="D:\Project\Computer-Science-And-Technology\writeExam\farben\.idea" />
+      </set>
+    </option>
   </component>
+  <component name="ProjectId" id="1hmVXY9ZrfUY1CAg3mcAbeOgaJc" />
   <component name="PropertiesComponent">
-    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
-    <property name="MyBatisLogPluginparameters" value="Parameters:" />
-    <property name="MyBatisLogPluginpreparing" value="Preparing:" />
-    <property name="MyBatisLogPluginrunning" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Jdk8" />
-    <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="Project" />
-    <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
-  </component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\Learning materials\求职\笔试\farben\src\Test\TWO" />
-    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -63,10 +37,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.CommandLineParameter">
+  <component name="RunManager">
     <configuration name="CommandLineParameter" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="src.com.GC.CommandLineParameter" />
       <module name="farben" />
       <extension name="coverage">
@@ -79,63 +51,9 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DeleteMostTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
-      <option name="MAIN_CLASS_NAME" value="src.Test.FOUR.DeleteMostTest" />
-      <module name="farben" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="src.Test.FOUR.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MargeList" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
-      <option name="MAIN_CLASS_NAME" value="Test.ONE.MargeList" />
-      <module name="farben" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Test.ONE.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="Application" factoryName="Application">
-      <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="main" type="Application" factoryName="Application">
-      <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
-      <option name="MAIN_CLASS_NAME" value="src.com.FOUR.Main" />
-      <module name="farben" />
-      <extension name="GrepConsole" selectedProfileId="1599528110025" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <list>
-      <item itemvalue="Application.main" />
-      <item itemvalue="Application.DeleteMostTest" />
-      <item itemvalue="Application.MargeList" />
-      <item itemvalue="Application.CommandLineParameter" />
-    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.CommandLineParameter" />
-        <item itemvalue="Application.MargeList" />
-        <item itemvalue="Application.DeleteMostTest" />
       </list>
     </recent_temporary>
   </component>
@@ -144,21 +62,13 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="52b017fc-cefc-4579-9709-a7184418ef34" name="Default Changelist" comment="" />
-      <created>1598925137966</created>
+      <changelist id="83139aca-626a-4c54-84ad-969add675042" name="Default Changelist" comment="" />
+      <created>1600616294659</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1598925137966</updated>
-      <workItem from="1598925141417" duration="27786000" />
-      <workItem from="1598958817986" duration="1855000" />
-      <workItem from="1599143376776" duration="1872000" />
-      <workItem from="1599268173547" duration="1813000" />
-      <workItem from="1599360547769" duration="2836000" />
-      <workItem from="1599376699500" duration="598000" />
-      <workItem from="1599440585376" duration="1513000" />
-      <workItem from="1599442478070" duration="602000" />
-      <workItem from="1599466171767" duration="2669000" />
-      <workItem from="1599525279725" duration="8417000" />
+      <updated>1600616294659</updated>
+      <workItem from="1600616297860" duration="6000" />
+      <workItem from="1600647741653" duration="20000" />
     </task>
     <servers />
   </component>
@@ -177,35 +87,5 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="VcsManagerConfiguration">
-    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Test/TWO/EatOrange.java</url>
-          <line>25</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Test/TWO/EatOrange.java</url>
-          <line>52</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Test/TWO/EatOrange.java</url>
-          <line>73</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/../../../Java/Jdk8/src/com/source/java/lang/Runtime.java</url>
-          <line>687</line>
-          <properties class="java.lang.Runtime" method="gc" />
-          <option name="timeStamp" value="16" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
