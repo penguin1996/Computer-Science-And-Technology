@@ -562,6 +562,7 @@ public abstract class AbstractQueuedSynchronizer
      *         value was not equal to the expected value.
      */
     protected final boolean compareAndSetState(int expect, int update) {
+        //通过调用unsafe.compareAndSwapInt方法，借助指令的原子性保证方法的原子性
         // See below for intrinsics setup to support this
         return unsafe.compareAndSwapInt(this, stateOffset, expect, update);
     }
@@ -1195,6 +1196,7 @@ public abstract class AbstractQueuedSynchronizer
      *        can represent anything you like.
      */
     public final void acquire(int arg) {
+        //EXCLUSIVE表示的当前获取的为互斥锁
         if (!tryAcquire(arg) &&
             acquireQueued(addWaiter(Node.EXCLUSIVE), arg))
             selfInterrupt();
@@ -1258,9 +1260,12 @@ public abstract class AbstractQueuedSynchronizer
      * @return the value returned from {@link #tryRelease}
      */
     public final boolean release(int arg) {
+        //tryRelease(arg)返回true时，表示没有线程持有当前锁即锁被释放，如果返回false就会跳过下面代码
         if (tryRelease(arg)) {
+            //锁被释放之后，就会从后面的线程队列中唤醒等待线程获取该锁
             Node h = head;
             if (h != null && h.waitStatus != 0)
+                //将后面的队列中的线程唤醒
                 unparkSuccessor(h);
             return true;
         }
@@ -1301,6 +1306,7 @@ public abstract class AbstractQueuedSynchronizer
         if (Thread.interrupted())
             throw new InterruptedException();
         if (tryAcquireShared(arg) < 0)
+            //让当前线程进入等待队列，并将其阻塞
             doAcquireSharedInterruptibly(arg);
     }
 
@@ -1338,7 +1344,9 @@ public abstract class AbstractQueuedSynchronizer
      * @return the value returned from {@link #tryReleaseShared}
      */
     public final boolean releaseShared(int arg) {
+        //当tryReleaseShared(arg)返回true时
         if (tryReleaseShared(arg)) {
+            //唤醒阻塞队列中所有等待的线程
             doReleaseShared();
             return true;
         }

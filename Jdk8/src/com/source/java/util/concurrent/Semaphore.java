@@ -176,10 +176,13 @@ public class Semaphore implements java.io.Serializable {
 
         final int nonfairTryAcquireShared(int acquires) {
             for (;;) {
+                //available表示当前许可证的数量
                 int available = getState();
+                //acquires表示想要获取的许可证数量
                 int remaining = available - acquires;
                 if (remaining < 0 ||
                     compareAndSetState(available, remaining))
+                    //当许可证书数量小于0的时候，将线程加入等待队列中
                     return remaining;
             }
         }
@@ -308,6 +311,7 @@ public class Semaphore implements java.io.Serializable {
      *
      * @throws InterruptedException if the current thread is interrupted
      */
+    //获取许可证
     public void acquire() throws InterruptedException {
         sync.acquireSharedInterruptibly(1);
     }

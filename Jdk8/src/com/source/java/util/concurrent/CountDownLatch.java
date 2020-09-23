@@ -162,6 +162,7 @@ public class CountDownLatch {
         private static final long serialVersionUID = 4982264981922014374L;
 
         Sync(int count) {
+            //会将AQS内部类的方法setState设置成我们期望的值
             setState(count);
         }
 
@@ -174,13 +175,22 @@ public class CountDownLatch {
         }
 
         protected boolean tryReleaseShared(int releases) {
+            //通过for循环进行CAS的自旋，将state减一
             // Decrement count; signal when transition to zero
             for (;;) {
                 int c = getState();
+                //当count为0时
                 if (c == 0)
+                    //不需要释放
                     return false;
+                //当count不为0时，nextc为count减一之后的结果
                 int nextc = c-1;
+                //通过CAS方法在多线程的情况下将当前count更新为nextc
+                //判断c是否为刚开始的值，如果时就通过CAS操作将c更新为nextc
+                //如果不是c说明存在线程修改了c,就会重新进入for循环
+                //直到cas（CompareAndSweap）操作的c为刚开始的值
                 if (compareAndSetState(c, nextc))
+                    //如果c等于1，则nextc为0，返回true
                     return nextc == 0;
             }
         }
@@ -195,6 +205,7 @@ public class CountDownLatch {
      *        before threads can pass through {@link #await}
      * @throws IllegalArgumentException if {@code count} is negative
      */
+    //count为倒数的数量
     public CountDownLatch(int count) {
         if (count < 0) throw new IllegalArgumentException("count < 0");
         this.sync = new Sync(count);
@@ -227,6 +238,7 @@ public class CountDownLatch {
      * @throws InterruptedException if the current thread is interrupted
      *         while waiting
      */
+    //等待直到倒数结束
     public void await() throws InterruptedException {
         sync.acquireSharedInterruptibly(1);
     }

@@ -172,6 +172,7 @@ public class LockSupport {
     public static void park(Object blocker) {
         Thread t = Thread.currentThread();
         setBlocker(t, blocker);
+        //park为native方法，使得当线程成阻塞，并处于挂起状态
         UNSAFE.park(false, 0L);
         setBlocker(t, null);
     }
