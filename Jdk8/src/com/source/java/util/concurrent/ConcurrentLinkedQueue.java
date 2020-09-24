@@ -198,6 +198,7 @@ public class ConcurrentLinkedQueue<E> extends AbstractQueue<E>
         }
 
         boolean casNext(Node<E> cmp, Node<E> val) {
+            //CAS CPU指令
             return UNSAFE.compareAndSwapObject(this, nextOffset, cmp, val);
         }
 
@@ -326,7 +327,7 @@ public class ConcurrentLinkedQueue<E> extends AbstractQueue<E>
     public boolean offer(E e) {
         checkNotNull(e);
         final Node<E> newNode = new Node<E>(e);
-
+        //for的死循环
         for (Node<E> t = tail, p = t;;) {
             Node<E> q = p.next;
             if (q == null) {
