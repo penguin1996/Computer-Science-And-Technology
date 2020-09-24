@@ -2381,6 +2381,7 @@ public class Collections {
 
     static <T> List<T> synchronizedList(List<T> list, Object mutex) {
         return (list instanceof RandomAccess ?
+                //同步代码块
                 new SynchronizedRandomAccessList<>(list, mutex) :
                 new SynchronizedList<>(list, mutex));
     }

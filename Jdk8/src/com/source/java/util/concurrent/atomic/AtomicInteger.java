@@ -58,8 +58,10 @@ public class AtomicInteger extends Number implements java.io.Serializable {
     private static final Unsafe unsafe = Unsafe.getUnsafe();
     private static final long valueOffset;
 
+    //初始静态代码块
     static {
         try {
+            //通过unsafe工具获取到value在内存中的地址
             valueOffset = unsafe.objectFieldOffset
                 (AtomicInteger.class.getDeclaredField("value"));
         } catch (Exception ex) { throw new Error(ex); }
