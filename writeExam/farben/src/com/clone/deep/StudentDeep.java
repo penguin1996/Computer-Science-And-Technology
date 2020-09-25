@@ -1,7 +1,5 @@
 package src.com.clone.deep;
 
-import src.com.clone.deep.MajorDeep;
-
 public class StudentDeep implements Cloneable{
 
     private String name;
