@@ -116,12 +116,14 @@ public class LongAdder extends Striped64 implements Serializable {
      * @return the sum
      */
     public long sum() {
+        //Cell数组是竞争激烈的时候，各个线程会分散到累加自己的Cell[i]中，Cell数组中的每个值就是某个线程
         Cell[] as = cells; Cell a;
+        //base变量是在线程竞争不激烈的情况下，累加操作直接作用在该变量上
         long sum = base;
         if (as != null) {
             for (int i = 0; i < as.length; ++i) {
                 if ((a = as[i]) != null)
-                    sum += a.value;
+                    sum += a.value; //sum增加每个cell中的值
             }
         }
         return sum;

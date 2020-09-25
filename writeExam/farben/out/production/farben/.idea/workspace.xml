@@ -2,9 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="83139aca-626a-4c54-84ad-969add675042" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/Sort/BubbleSort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/farben/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/farben/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/farben/src/com/GC/CommandLineParameter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/farben/src/com/GC/CommandLineParameter.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/clone/deep/DeepClone.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/clone/deep/MajorDeep.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/clone/deep/StudentDeep.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/clone/shallow/MajorShallow.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/clone/shallow/ShallowClone.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/clone/shallow/StudentShallow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Jdk8/src/com/source/java/util/LinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Jdk8/src/com/source/java/util/LinkedList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Jdk8/src/com/source/java/util/concurrent/Semaphore.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Jdk8/src/com/source/java/util/concurrent/Semaphore.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Jdk8/src/com/source/java/util/concurrent/atomic/LongAdder.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Jdk8/src/com/source/java/util/concurrent/atomic/LongAdder.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -30,9 +36,19 @@
     </option>
   </component>
   <component name="ProjectId" id="1hmVXY9ZrfUY1CAg3mcAbeOgaJc" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Jdk7" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="src.com.clone" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -46,7 +62,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.BubbleSort">
+  <component name="RunManager" selected="Application.DeepClone">
     <configuration name="BubbleSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="src.com.Sort.BubbleSort" />
       <module name="farben" />
@@ -73,8 +89,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="DeepClone" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="src.com.clone.deep.DeepClone" />
+      <module name="farben" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="src.com.clone.deep.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.DeepClone" />
         <item itemvalue="Application.BubbleSort" />
         <item itemvalue="Application.CommandLineParameter" />
       </list>
@@ -93,7 +123,12 @@
       <workItem from="1600616297860" duration="6000" />
       <workItem from="1600647741653" duration="20000" />
       <workItem from="1600742826858" duration="2957000" />
-      <workItem from="1600786195493" duration="2836000" />
+      <workItem from="1600786195493" duration="6067000" />
+      <workItem from="1600859461365" duration="1912000" />
+      <workItem from="1600910003989" duration="1680000" />
+      <workItem from="1600933770154" duration="13359000" />
+      <workItem from="1600994555968" duration="5019000" />
+      <workItem from="1601035520384" duration="1472000" />
     </task>
     <servers />
   </component>
@@ -112,5 +147,8 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
 </project>
