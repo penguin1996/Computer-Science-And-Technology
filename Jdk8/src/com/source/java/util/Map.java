@@ -126,7 +126,7 @@ import java.io.Serializable;
  * @see Set
  * @since 1.2
  */
-public interface Map<K,V> {    //现在的源码文件是可以修改的，我在这里添加了注释
+public interface Map<K,V> {
     // Query Operations
 
     /**
