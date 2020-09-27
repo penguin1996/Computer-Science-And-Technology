@@ -1,0 +1,27 @@
+com\interview\JavaBasic\bytecode>javap -c ByteCodeSample.class
+Compiled from "ByteCodeSample.java" //说明是从哪个类编译而来
+public class com.interview.javabasic.bytecode.ByteCodeSample { //声明一个带有package的类
+	//当我们没有指定构造函数的时候，编译器会默认生成一个无参构造函数
+  public com.interview.javabasic.bytecode.ByteCodeSample(); //无参构造函数
+    Code: //表示需要执行的内容
+       0: aload_0 //在非静态方法中表示对this对象的操作，在Static方法中，表示对方法的第一个参数的操作
+       1: invokespecial #1      //调用父类构造方法Super()去进行初始化 // Method java/lang/Object."<init>":()V 
+       4: return //构造函数执行完成并退出
+
+	//main函数接收的是一个字符串数组：java.lang.String[]
+  public static void main(java.lang.String[]);
+    Code: //需要执行的内容，此处涉及到Java中的堆和栈，由于局部变量所以涉及到栈的操作
+       0: iconst_1 	//将常量1放到栈顶
+       1: istore_1 	//将栈顶的常量1放到局部变量1（即第一个局部变量）中
+       2: iconst_5 	//将常量5放到栈顶
+       3: istore_2 	//将栈顶的常量5放到局部变量2（即第二个局部变量）中
+       4: iinc          1, 1 //将变量1加上1
+       7: iinc          2, 1 //将变量2加上1
+      10: getstatic     #2 //获取printStream的静态域，并将其压入栈顶 // Field java/lang/System.out:Ljava/io/PrintStream;
+      13: iload_1	//将本地第一个变量的值推送到栈顶
+      14: invokevirtual #3  //调用PrintStream的println方法打印第一个变量的值  // Method java/io/PrintStream.println:(I)V
+      17: getstatic     #2  //获取printStream的静态域，并将其压入栈顶 // Field java/lang/System.out:Ljava/io/PrintStream;
+      20: iload_2	//将本地第二个变量的值推送到栈顶
+      21: invokevirtual #3 //调用PrintStream的println方法打印第二个变量的值 // Method java/io/PrintStream.println:(I)V
+      24: return //方法执行完毕并退出
+}

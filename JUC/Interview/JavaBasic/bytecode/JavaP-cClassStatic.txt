@@ -1,0 +1,35 @@
+Compiled from "ByteCodeSampleStatic.java"
+public class com.interview.javabasic.bytecode.ByteCodeSampleStatic {
+  static int k;
+
+  public com.interview.javabasic.bytecode.ByteCodeSampleStatic();
+    Code:
+       0: aload_0
+       1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+       4: return
+
+  public static void main(java.lang.String[]);
+    Code:
+       0: iconst_5
+       1: istore_2
+       2: iconst_1
+       3: istore_1
+       4: iconst_3
+       5: putstatic     #2                  // Field k:I
+       8: getstatic     #2                  // Field k:I
+      11: iconst_3
+      12: imul
+      13: putstatic     #2                  // Field k:I
+      16: iinc          2, 1
+      19: iinc          1, 1
+      22: getstatic     #3                  // Field java/lang/System.out:Ljava/io/PrintStream;
+      25: getstatic     #2                  // Field k:I
+      28: invokevirtual #4                  // Method java/io/PrintStream.println:(I)V
+      31: getstatic     #3                  // Field java/lang/System.out:Ljava/io/PrintStream;
+      34: iload_2
+      35: invokevirtual #4                  // Method java/io/PrintStream.println:(I)V
+      38: getstatic     #3                  // Field java/lang/System.out:Ljava/io/PrintStream;
+      41: iload_1
+      42: invokevirtual #4                  // Method java/io/PrintStream.println:(I)V
+      45: return
+}

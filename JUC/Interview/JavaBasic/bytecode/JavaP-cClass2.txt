@@ -1,0 +1,22 @@
+Compiled from "ByteCodeSample2.java"
+public class com.interview.javabasic.bytecode.ByteCodeSample2 {
+  public com.interview.javabasic.bytecode.ByteCodeSample2();
+    Code:
+       0: aload_0
+       1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+       4: return
+
+  public static void main(java.lang.String[]);
+    Code:
+       0: iconst_5	//将常量5放到栈顶
+       1: istore_2	//将常量5放到变量2中(即第二个局部变量中)
+       2: iconst_1
+       3: istore_1
+       4: iinc          1, 1
+       7: iinc          2, 1
+      10: getstatic     #2                  // Field java/lang/System.out:Ljava/io/PrintStream;
+      13: iload_1
+      14: invokevirtual #3                  // Method java/io/PrintStream.println:(I)V
+      17: getstatic     #2                  // Field java/lang/System.out:Ljava/io/PrintStream;
+      20: iload_2
+      21: invokevirtual #3                  // Method java/io/PrintStream.println:(I)V

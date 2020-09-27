@@ -175,14 +175,17 @@ public class Semaphore implements java.io.Serializable {
         }
 
         final int nonfairTryAcquireShared(int acquires) {
+            //一个for循环的死循环
             for (;;) {
                 //available表示当前许可证的数量
                 int available = getState();
-                //acquires表示想要获取的许可证数量
+                //acquires表示想要获取的许可证数量,通过remaining检查剩余许可证数量是否满足此次需求
+                // remaining>0表示满足，就会通过CompareAndSetState自旋来改变state状态，直到改变成功则返回正数
+                // reminging<0表示不满足，直接返回负数，表示失败，则则线程进入阻塞状态，进入阻塞队列进行排队
                 int remaining = available - acquires;
                 if (remaining < 0 ||
                     compareAndSetState(available, remaining))
-                    //当许可证书数量小于0的时候，将线程加入等待队列中
+                    //当剩余许可证书数量小于0的时候，将线程加入等待队列中
                     return remaining;
             }
         }
@@ -250,7 +253,7 @@ public class Semaphore implements java.io.Serializable {
                 int available = getState();
                 int remaining = available - acquires;
                 if (remaining < 0 ||
-                    compareAndSetState(available, remaining))
+                        compareAndSetState(available, remaining))
                     return remaining;
             }
         }
