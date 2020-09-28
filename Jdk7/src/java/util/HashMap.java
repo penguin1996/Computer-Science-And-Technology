@@ -797,7 +797,6 @@ public class HashMap<K,V>
 
         return result;
     }
-
     static class Entry<K,V> implements Map.Entry<K,V> {
         final K key;
         V value;
@@ -813,6 +812,7 @@ public class HashMap<K,V>
             key = k;
             hash = h;
         }
+
 
         public final K getKey() {
             return key;

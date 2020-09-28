@@ -905,7 +905,7 @@ public class ArrayList<E> extends AbstractList<E>
         }
 
         final void checkForComodification() {
-            //expectedModCount是希望被修改的次数，modCount是修改的实际次数，没修改一次modCount就会加一
+            //expectedModCount是希望被修改的次数，modCount是修改的实际次数，每修改一次modCount就会加一
             if (modCount != expectedModCount)
                 throw new ConcurrentModificationException();
         }
