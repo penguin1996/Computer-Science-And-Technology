@@ -3164,5 +3164,10 @@ public final class String
      * @return  a string that has the same contents as this string, but is
      *          guaranteed to be from a pool of unique strings.
      */
+    /*intern是一个本地方法，它的作用是如果字符串常量池中已经包含一个等于此String对象的字符串
+    * 则返回代表常量池中这个字符串的String对象的引用；否则，会将此String对象包含的字符串添加
+    * 到常量池中，并且返回此String对象的引用。在JDK6或者更早之前的HotSpot虚拟机中，常量池都是
+    * 分配在永久代中，JDK8之后，永久代便完全退出了历史舞台，元空间作为其替代者。
+    * */
     public native String intern();
 }

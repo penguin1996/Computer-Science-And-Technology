@@ -58,6 +58,7 @@ class Optimal {
                 count++;
                 System.out.println(count);
             }
+            //如果不存在交换说明当前已经是有序序列
             if (flag == 1) {
                 return sort;
             }
@@ -88,6 +89,7 @@ class Optimal {
                 count++;
                 System.out.println(count);
             }
+            //最后一次比较的位置，此次比较后的数据就不需要再比较
             len = tempPostion;
             if (flag == 1) {
                 return sort;

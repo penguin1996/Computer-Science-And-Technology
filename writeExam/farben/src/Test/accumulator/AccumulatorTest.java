@@ -30,6 +30,8 @@ public class AccumulatorTest {
         //判断线程池中所有的线程是否执行完
         while (!executorService.isTerminated()){
 
+            String s;
+            Object o;
         }
         System.out.println("1~9累加的最终结果为："+accumulator.getThenReset());
     }
