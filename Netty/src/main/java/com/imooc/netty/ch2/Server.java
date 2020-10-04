@@ -4,6 +4,11 @@ import java.io.IOException;
 import java.net.ServerSocket;
 import java.net.Socket;
 
+/*
+* while(true)
+* for(;;)
+* 两者等价
+* */
 public class Server {
 
     private ServerSocket serverSocket;
@@ -37,3 +42,4 @@ public class Server {
         }
     }
 }
+

@@ -28,11 +28,8 @@ public class Client {
                     }
                     sleep();
                 }
-
-
             }
         }).start();
-
     }
 
     private static void sleep() {

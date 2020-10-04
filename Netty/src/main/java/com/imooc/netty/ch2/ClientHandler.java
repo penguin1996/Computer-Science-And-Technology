@@ -1,5 +1,7 @@
 package com.imooc.netty.ch2;
 
+import io.netty.channel.nio.NioEventLoop;
+
 import java.io.IOException;
 import java.io.InputStream;
 import java.net.Socket;
@@ -19,6 +21,7 @@ public class ClientHandler {
             @Override
             public void run() {
                 doStart();
+                NioEventLoop nioEventLoop;
             }
         }).start();
     }
@@ -36,7 +39,6 @@ public class ClientHandler {
                 }
 
             }
-
 
         } catch (IOException e) {
             e.printStackTrace();
