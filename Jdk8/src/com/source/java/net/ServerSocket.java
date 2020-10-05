@@ -542,6 +542,7 @@ class ServerSocket implements java.io.Closeable {
             s.impl = null;
             si.address = new InetAddress();
             si.fd = new FileDescriptor();
+            //while(true)轮询
             getImpl().accept(si);
 
             SecurityManager security = System.getSecurityManager();

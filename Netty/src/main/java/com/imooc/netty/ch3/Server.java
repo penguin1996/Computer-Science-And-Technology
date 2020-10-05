@@ -14,7 +14,10 @@ import io.netty.util.AttributeKey;
 public final class Server {
 
     public static void main(String[] args) throws Exception {
+
+        //创建了两种类型的EventLoop
         EventLoopGroup bossGroup = new NioEventLoopGroup(1);
+        //NioEventLoopGroup构造函数默认传入0
         EventLoopGroup workerGroup = new NioEventLoopGroup();
 
         try {
@@ -33,6 +36,7 @@ public final class Server {
                         }
                     });
 
+            //服务端代码的入口
             ChannelFuture f = b.bind(8888).sync();
 
             f.channel().closeFuture().sync();

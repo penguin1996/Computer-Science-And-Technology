@@ -11,5 +11,4 @@ public class ServerBoot {
         Server server = new Server(PORT);
         server.start();
     }
-
 }
