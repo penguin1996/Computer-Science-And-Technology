@@ -1,4 +1,4 @@
-1:首先方法进入：doDispatch
+ 1:首先方法进入：doDispatch
 2:checkMultipart() 判断当前请求是否有文件
 3:getHandler（） ：通过HandleMapping去找一个Controller对象 
 	3.1:扩展点1：HandleMapping
@@ -6,12 +6,12 @@
 4: getHandlerAdapter（）: 根据你controller的类型去找一个适配器
 	4.1:  因为Controller有很多种不同的注册方式 所以需要不同的适配器
 	4.2:扩展点2：HandlerAdapter
-5:handle() : 执行Controller逻辑并且进行视图裁决（判断是要重定向还是转发还是响应页面）
+5: handle() : 执行Controller逻辑并且进行视图裁决（判断是要重定向还是转发还是响应页面）
 	5.1invokeForRequest()：执行方法的全部逻辑
 	5.2：首先给参数赋值  
 		5.2.1:参数赋值的扩展点：HandlerMethodArgumentResolver 
 	5.3：调用invoke（）指定方法
-6:setResponseStatus（）设置ResponseStatus响应状态码 对标：@ResponseStatus注解
+6: setResponseStatus（）设置ResponseStatus响应状态码 对标：@ResponseStatus注解
 7：handleReturnValue（） 进行视图裁决
 	7.1:扩展点:returnValueHandlers 通过这个对象来进行判断接下来视图怎么做、
 8：handler.handleReturnValue（） 对冲顶于返回值处理（判断是否需要响应还是需要重定向）
