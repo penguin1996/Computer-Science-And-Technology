@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b4487f7d-d012-4d98-afb1-e59c42c5da60" name="Default Changelist" comment="" />
+    <list default="true" id="b4487f7d-d012-4d98-afb1-e59c42c5da60" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../Netty/.idea/libraries/Maven__io_netty_netty_all_unknown.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Netty/netty-study.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../Netty/netty-study.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Netty/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Netty/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,6 +22,13 @@
       <set>
         <option value="D:\Project\Computer-Science-And-Technology\spring-mvc\.idea" />
       </set>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
     </option>
   </component>
   <component name="ProjectId" id="1ibKmczvFtr4NSFX7rLrkyogSbm" />
@@ -52,6 +65,9 @@
       <option name="presentableId" value="Default" />
       <updated>1602171011503</updated>
       <workItem from="1602171014058" duration="683000" />
+      <workItem from="1602210168993" duration="740000" />
+      <workItem from="1602228981510" duration="608000" />
+      <workItem from="1602285883720" duration="474000" />
     </task>
     <servers />
   </component>
@@ -63,7 +79,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
