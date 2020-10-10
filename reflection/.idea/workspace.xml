@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="8c7e13cf-a188-4b96-8cd8-87c076d434c4" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../Reflectionss/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Reflectionss/.idea/Reflection.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Reflectionss/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Reflectionss/.idea/description.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Reflectionss/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Reflectionss/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Reflectionss/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Reflectionss/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Reflectionss/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Reflectionss/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Reflectionss/Reflection.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Reflectionss/Reflection.rar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Reflectionss/out/production/Reflection/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Reflectionss/out/production/Reflection/.idea/Reflection.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Reflectionss/out/production/Reflection/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Reflectionss/out/production/Reflection/.idea/description.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Reflectionss/out/production/Reflection/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Reflectionss/out/production/Reflection/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Reflectionss/out/production/Reflection/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Reflectionss/out/production/Reflection/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Reflectionss/out/production/Reflection/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Reflectionss/out/production/Reflection/Reflection.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Reflectionss/out/production/Reflection/reflection/Student.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Reflectionss/out/production/Reflection/src/Main.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Reflectionss/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Reflectionss/src/reflection/Reference/reflect.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Reflectionss/src/reflection/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Reflectionss/src/reflection/reflectDemo/BeanUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Reflectionss/src/reflection/reflectDemo/ClassDemo1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Reflectionss/src/reflection/reflectDemo/ClassDemo2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Reflectionss/src/reflection/reflectDemo/ClassDemo3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Reflectionss/src/reflection/reflectDemo/ClassDemo4.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Reflectionss/src/reflection/reflectDemo/ClassDemo5.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Reflectionss/src/reflection/reflectDemo/ClassUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Reflectionss/src/reflection/reflectDemo/MethodDemo1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Reflectionss/src/reflection/reflectDemo/MethodDemo2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Reflectionss/src/reflection/reflectDemo/MethodDemo3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Reflectionss/src/reflection/reflectDemo/MethodDemo4.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Reflectionss/src/reflection/reflectDemo/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Reflectionss/src/reflection/reflectDemo/UserService.java" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1ifEzDrvwZTLb3g8wGFaGZ14QMI" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="reflection.Main" />
+      <module name="reflection" />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8c7e13cf-a188-4b96-8cd8-87c076d434c4" name="Default Changelist" comment="" />
+      <created>1602290505764</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1602290505764</updated>
+      <workItem from="1602290508510" duration="861000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+</project>
