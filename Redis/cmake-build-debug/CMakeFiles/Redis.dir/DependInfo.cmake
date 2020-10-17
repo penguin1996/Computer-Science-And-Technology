@@ -4,6 +4,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "D:/Project/Computer-Science-And-Technology/Redis/ALGraph.cpp" "D:/Project/Computer-Science-And-Technology/Redis/cmake-build-debug/CMakeFiles/Redis.dir/ALGraph.cpp.obj"
+  "D:/Project/Computer-Science-And-Technology/Redis/MGraph.cpp" "D:/Project/Computer-Science-And-Technology/Redis/cmake-build-debug/CMakeFiles/Redis.dir/MGraph.cpp.obj"
   "D:/Project/Computer-Science-And-Technology/Redis/main.cpp" "D:/Project/Computer-Science-And-Technology/Redis/cmake-build-debug/CMakeFiles/Redis.dir/main.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")

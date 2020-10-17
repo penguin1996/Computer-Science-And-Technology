@@ -1,5 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/Redis.dir/main.cpp.obj"
+  "CMakeFiles/Redis.dir/MGraph.cpp.obj"
+  "CMakeFiles/Redis.dir/ALGraph.cpp.obj"
   "Redis.pdb"
   "Redis.exe"
   "Redis.exe.manifest"

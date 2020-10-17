@@ -122,6 +122,60 @@ Redis/fast:
 	$(MAKE) -f CMakeFiles\Redis.dir\build.make CMakeFiles/Redis.dir/build
 .PHONY : Redis/fast
 
+ALGraph.obj: ALGraph.cpp.obj
+
+.PHONY : ALGraph.obj
+
+# target to build an object file
+ALGraph.cpp.obj:
+	$(MAKE) -f CMakeFiles\Redis.dir\build.make CMakeFiles/Redis.dir/ALGraph.cpp.obj
+.PHONY : ALGraph.cpp.obj
+
+ALGraph.i: ALGraph.cpp.i
+
+.PHONY : ALGraph.i
+
+# target to preprocess a source file
+ALGraph.cpp.i:
+	$(MAKE) -f CMakeFiles\Redis.dir\build.make CMakeFiles/Redis.dir/ALGraph.cpp.i
+.PHONY : ALGraph.cpp.i
+
+ALGraph.s: ALGraph.cpp.s
+
+.PHONY : ALGraph.s
+
+# target to generate assembly for a file
+ALGraph.cpp.s:
+	$(MAKE) -f CMakeFiles\Redis.dir\build.make CMakeFiles/Redis.dir/ALGraph.cpp.s
+.PHONY : ALGraph.cpp.s
+
+MGraph.obj: MGraph.cpp.obj
+
+.PHONY : MGraph.obj
+
+# target to build an object file
+MGraph.cpp.obj:
+	$(MAKE) -f CMakeFiles\Redis.dir\build.make CMakeFiles/Redis.dir/MGraph.cpp.obj
+.PHONY : MGraph.cpp.obj
+
+MGraph.i: MGraph.cpp.i
+
+.PHONY : MGraph.i
+
+# target to preprocess a source file
+MGraph.cpp.i:
+	$(MAKE) -f CMakeFiles\Redis.dir\build.make CMakeFiles/Redis.dir/MGraph.cpp.i
+.PHONY : MGraph.cpp.i
+
+MGraph.s: MGraph.cpp.s
+
+.PHONY : MGraph.s
+
+# target to generate assembly for a file
+MGraph.cpp.s:
+	$(MAKE) -f CMakeFiles\Redis.dir\build.make CMakeFiles/Redis.dir/MGraph.cpp.s
+.PHONY : MGraph.cpp.s
+
 main.obj: main.cpp.obj
 
 .PHONY : main.obj
@@ -158,6 +212,12 @@ help:
 	@echo ... Redis
 	@echo ... edit_cache
 	@echo ... rebuild_cache
+	@echo ... ALGraph.obj
+	@echo ... ALGraph.i
+	@echo ... ALGraph.s
+	@echo ... MGraph.obj
+	@echo ... MGraph.i
+	@echo ... MGraph.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
