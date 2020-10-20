@@ -122,6 +122,7 @@ public class LinkedList<E>
     /**
      * Links e as first element.
      */
+    //LinkedList的数据结构为带有头结点和尾结点的双向链表
     //头插
     private void linkFirst(E e) {
         final Node<E> f = first;
@@ -138,6 +139,7 @@ public class LinkedList<E>
     /**
      * Links e as last element.
      */
+    //LinkedList的数据结构为带有头结点和尾结点的双向链表
     //尾插
     void linkLast(E e) {
         final Node<E> l = last;

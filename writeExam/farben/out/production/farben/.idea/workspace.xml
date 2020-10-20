@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="83139aca-626a-4c54-84ad-969add675042" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/OutAndInner/Outter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Jdk8/src/com/source/java/lang/String.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Jdk8/src/com/source/java/lang/String.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Test/accumulator/AccumulatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Test/accumulator/AccumulatorTest.java" afterDir="false" />
-    </list>
+    <list default="true" id="83139aca-626a-4c54-84ad-969add675042" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,7 +33,7 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/com/clone/shallow" />
+    <property name="last_opened_file_path" value="E:/Netty/netty" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
@@ -60,13 +56,26 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Outter">
+  <component name="RunManager" selected="Application.AnalyzeStringTest">
     <configuration name="AccumulatorTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="src.Test.accumulator.AccumulatorTest" />
       <module name="farben" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="src.Test.accumulator.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AnalyzeStringTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Test.Three.AnalyzeStringTest" />
+      <module name="farben" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Test.Three.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -87,32 +96,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Format" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="src.Test.Format" />
-      <module name="farben" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="src.Test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Outter" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="src.com.OutAndInner.Outter" />
-      <module name="farben" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="src.com.OutAndInner.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="ShallowClone" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="src.com.clone.shallow.ShallowClone" />
       <module name="farben" />
@@ -126,11 +109,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Application.AccumulatorTest" />
+      <item itemvalue="Application.DeepClone" />
+      <item itemvalue="Application.ShallowClone" />
+      <item itemvalue="Application.AnalyzeStringTest" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Outter" />
+        <item itemvalue="Application.AnalyzeStringTest" />
         <item itemvalue="Application.AccumulatorTest" />
-        <item itemvalue="Application.Format" />
         <item itemvalue="Application.DeepClone" />
         <item itemvalue="Application.ShallowClone" />
       </list>
@@ -162,7 +150,11 @@
       <workItem from="1601347628727" duration="1211000" />
       <workItem from="1601366624056" duration="290000" />
       <workItem from="1601426045002" duration="730000" />
-      <workItem from="1601453989796" duration="1787000" />
+      <workItem from="1601453989796" duration="3099000" />
+      <workItem from="1601520448590" duration="701000" />
+      <workItem from="1601534351960" duration="35000" />
+      <workItem from="1601688425829" duration="940000" />
+      <workItem from="1601707464936" duration="687000" />
     </task>
     <servers />
   </component>

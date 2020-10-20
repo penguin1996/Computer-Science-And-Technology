@@ -13,5 +13,8 @@ public class AnalyzeStringTest {
         analyzeString.ignoreCase(s);
         analyzeString.numOfCharAndNum(s);
         //analyzeString.numOfCharAndNum2(s);
+
+        System.out.println(s.substring(2));//区间属于[index,后面所有数据)
+        System.out.println(s.substring(2, 3)); //前闭后开区间
     }
 }
