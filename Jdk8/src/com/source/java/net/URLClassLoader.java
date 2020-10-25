@@ -42,7 +42,6 @@ import java.security.SecureClassLoader;
 import java.util.Enumeration;
 import java.util.List;
 import java.util.NoSuchElementException;
-import java.util.Objects;
 import java.util.Set;
 import java.util.WeakHashMap;
 import java.util.jar.Attributes;
