@@ -1055,7 +1055,8 @@ public class CompletableFuture<T> implements Future<T>, CompletionStage<T> {
     }
 
     @SuppressWarnings("serial")
-    static final class BiApply<T,U,V> extends BiCompletion<T,U,V> {
+    static final class
+    BiApply<T,U,V> extends BiCompletion<T,U,V> {
         BiFunction<? super T,? super U,? extends V> fn;
         BiApply(Executor executor, CompletableFuture<V> dep,
                 CompletableFuture<T> src, CompletableFuture<U> snd,
