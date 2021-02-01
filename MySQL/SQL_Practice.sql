@@ -127,7 +127,91 @@ where score.sid not in (
 ) 
 AND score.cid= '02';
 
+#查询平均成绩大于等于 60 分的同学的学生编号和学生姓名和平均成绩
+#分析，我们可以根据学生编号将成绩分组，对分组的score求平均值，最后在选取结果中利用AVG函数进行求平均值并判断是否大于等于60即可
+#一般的联合搜索
+select student.sid,sname,avgScore from student,(
+    select sid, AVG(score) as avgScore from score 
+    GROUP BY sid
+    HAVING AVG(score)> 60
+    )r
+where student.sid = r.sid;
+#左连接
+select s.sid,avgSocre,sname from(
+select sid, AVG(score) as avgSocre from score  
+GROUP BY sid 
+HAVING AVG(score)> 60
+)r left join 
+(select student.sid, student.sname from
+student)s on s.sid = r.sid;
+#右连接
+select student.sid, student.sname, r.avgScore from student right join(
+      select sid, AVG(score) AS avgScore from score
+      GROUP BY sid
+      HAVING AVG(score)> 60
+)r on student.sid = r.sid;
+#注意：我们必须给AVG函数计算的结果给一个别名avgScore
 
+#查询在socre表存在成绩的学生信息
+select DISTINCT student.*
+from student,score
+where student.sid=score.sid
+
+#查询所有同学的学生编号，学生姓名，选课总数，所有课程的成绩综合
+#联合查询（不会显示没有选课的学生）
+select student.sid, student.sname,r.coursenumber,r.scoresum
+from student,
+(select score.sid, sum(score.score) as scoresum, count(score.cid) as coursenumber from score 
+group by score.sid) r
+where student.sid = r.sid;
+#通过join查询可以显示没有选课的学生（没有选课的学生为NULL）
+select s.sid, s.sname,r.coursenumber,r.scoresum
+from (
+    (select student.sid,student.sname 
+    from student
+    )s 
+    left join 
+    (select 
+        score.sid, sum(score.score) as scoresum, count(score.cid) as coursenumber
+        from score 
+        group by score.sid
+    )r 
+   on s.sid = r.sid
+);
+
+#查有成绩的学生信息
+#exists
+select * from student 
+where exists (select score.sid from score where student.sid = score.sid);
+
+#in
+select * from student
+where student.sid in (select score.sid from score);
+
+#查询姓氏是李的老师的数量
+select count(*) as nameNum
+from teacher
+where tname like '李%';
+
+#查询学习过张三老师课程的学生信息
+#多表联合查询
+select student.* from student,teacher,course,score
+where 
+    student.sid = score.sid 
+    and course.cid=score.cid 
+    and course.tid = teacher.tid 
+    and tname = '张三';
+    
+#查询没有学习所有课程的同学信息
+#因为有学生什么课都没有选，反向思考，先查询选了所有课的学生，再选择这些人之外的学生.
+select * from student
+where student.sid not in (
+  select score.sid from score
+  group by score.sid
+  having count(score.cid)= (select count(cid) from course)
+);
+
+#8查询至少有一门课程与学号为“01”的同学所学相同的同学的信息
 
 
 
