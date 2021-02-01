@@ -211,7 +211,54 @@ where student.sid not in (
   having count(score.cid)= (select count(cid) from course)
 );
 
-#8查询至少有一门课程与学号为“01”的同学所学相同的同学的信息
+#查询至少有一门课程与学号为“01”的同学所学相同的同学的信息
+select * from student 
+where student.sid in (
+    select score.sid from score 
+    where score.cid in(
+        select score.cid from score 
+        where score.sid = '01'
+    )
+);
 
+#查询和" 01 "号的同学学习的课程完全相同的其他同学的信息
+#待做
 
+#查询没有学过张三老师的任一门课的学生姓名
+#嵌套查询
+select * from student
+    where student.sid not in(
+        select score.sid from score where score.cid in(
+            select course.cid from course where course.tid in(
+                select teacher.tid from teacher where tname = "张三"
+            )
+        )
+    );
+#多表联合查询(存在问题)
+select * from student
+where student.sid not in(
+    select score.sid from score,course,teacher 
+    where
+        score.cid = course.cid
+        and course.tid = teacher.tid
+        and teacher.tname= "张三"
+);
+
+#查询两门及其以上不及格课程的同学的学号，姓名及其平均成绩
+select student.sid, student.sname,b.avgScore
+from student RIGHT JOIN
+(select sid, AVG(score) as avgScore from score
+    where sid in (
+              select sid from score 
+              where score<60 
+              GROUP BY sid 
+              HAVING count(score)>1)
+    GROUP BY sid) b on student.sid=b.sid;
+
+#检索" 01 "课程分数小于 60，按分数降序排列的学生信息
+select student.*, score.score from student, score
+where student.sid = score.sid
+and score.score < 60
+and cid = "01"
+ORDER BY score.score DESC;
 
