@@ -155,9 +155,9 @@ select student.sid, student.sname, r.avgScore from student right join(
 #查询在socre表存在成绩的学生信息
 select DISTINCT student.*
 from student,score
-where student.sid=score.sid
+where student.sid=score.sid;
 
-#查询所有同学的学生编号，学生姓名，选课总数，所有课程的成绩综合
+#查询所有同学的学生编号,学生姓名,所有课程的成绩综合
 #联合查询（不会显示没有选课的学生）
 select student.sid, student.sname,r.coursenumber,r.scoresum
 from student,
@@ -262,3 +262,60 @@ and score.score < 60
 and cid = "01"
 ORDER BY score.score DESC;
 
+#按平均成绩从高到低显示所有学生的所有课程的成绩以及平均成绩
+select * from score 
+left join (
+    select sid,avg(score) as avgScore from score 
+    group by sid
+    )r 
+on score.sid = r.sid
+order by avgScore desc;
+
+#查询各科成绩最高分，最低分和平均分
+#显示形式：课程 ID，课程 name，最高分，最低分，平均分，及格率，中等率，优良率，优秀率
+#及格为>=60，中等为：70-80，优良为：80-90，优秀为：>=90
+#要求输出课程号和选修人数，查询结果按人数降序排列，若人数相同，按课程号升序排列
+select score.cid,
+max(score.score) as 最高分,
+min(score.score) as 最低分,
+AVG(score.score) as 平均分,
+count(*) as 选修人数,
+sum(case when score.score>=60 then 1 else 0 end )/count(*) as 及格率,
+sum(case when score.score>=70 and score.score<80 then 1 else 0 end )/count(*) as 中等率,
+sum(case when score.score>=80 and score.score<90 then 1 else 0 end )/count(*) as 优良率,
+sum(case when score.score>=90 then 1 else 0 end )/count(*) as 优秀率 
+from score
+GROUP BY score.cid
+ORDER BY count(*) DESC , score.cid ASC;
+
+#按各科成绩进行排序，并显示排名，分数重复是保留名次空缺及同样的分数也分前后名次
+/*select  a.sid, a.cid, a.score, count(b.score)+1 as 排名
+from (score as a )
+left join score as b 
+on a.score < b.score and a.cid = b.cid
+group by a.cid, a.sid, a.score
+order by a.cid, rank ASC;*/
+
+#查询学生总成绩，并进行排名，总分重复不保留名次空缺
+#SQL中的变量
+set @crank=0;
+select q.sid, total, @crank := (@crank +1) as 名次 from(
+select score.sid, sum(score.score) as total from score
+group by score.sid
+order by total desc)q;
+
+/*
+统计各科成绩各分数段人数：课程编号，课程名称，[85-100]，[70-85]，[60-70]，[0-60] 及所占百分比
+*/
+select course.cid,course.cname, 
+sum(case when score.score<=100 and score.score>85 then 1 else 0 end) as "[85-100]",
+sum(case when score.score<=100 and score.score>85 then 1 else 0 end)/count(*)*100 as "百分比%",
+sum(case when score.score<=85 and score.score>70 then 1 else 0 end) as "[70-85]",
+sum(case when score.score<=85 and score.score>70 then 1 else 0 end)/count(*)*100 as "百分比%",
+sum(case when score.score<=70 and score.score>60 then 1 else 0 end) as "[60-70]",
+sum(case when score.score<=70 and score.score>60 then 1 else 0 end)/count(*)*100 as "百分比%",
+sum(case when score.score<=60 and score.score>0 then 1 else 0 end) as "[0-60]",
+sum(case when score.score<=60 and score.score>0 then 1 else 0 end)/count(*)*100 as "百分比%"
+from score left join course
+on score.cid = course.cid
+group by score.cid;
