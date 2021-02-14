@@ -319,3 +319,44 @@ sum(case when score.score<=60 and score.score>0 then 1 else 0 end)/count(*)*100 
 from score left join course
 on score.cid = course.cid
 group by score.cid;
+
+/*
+查询各科成绩钱三名的记录
+*/
+#方式一：计算比自己分数大的记录数量，如果小于3就select，
+#然后对所有select到的结果按照分数和课程编号进行排序
+#group by之后是不可以取limit
+select * from score
+ where (
+	select count(*) from score as s
+    where score.cid = s.cid and score.score < s.score
+ ) < 3 order by cid asc, score.score desc;
+#方式二：自身左交，即先用自己交自己，条件为
+select * from score s left join score ss on s.cid = ss.cid and s.score < ss.score
+order by s.cid,s.score;
+
+#查询1990年出生的学生名单
+select * from student
+where year(student.sage) = 1990;
+
+#按照出生年月日，当前月日 < 出生年月的则年龄减一
+select student.sid as 学生编号 , student.sname as 学生姓名,
+TIMESTAMPDIFF(YEAR,student.sage,CURDATE()) as 学生年龄 from student;
+
+#查询上周过生日的学生
+select * from student where weekofyear(student.sage) = weekofyear(CURDATE()) - 1;
+
+#查询本周过生日的学生
+select * from student where weekofyear(student.sage) = weekofyear(CURDATE());
+
+#查询下周过生日的学生
+select * from student where weekofyear(student.sage) = weekofyear(CURDATE())+1;
+
+#查询上个月过生日的学生
+select * from student where month(student.sage) = month(curdate()) - 1;
+
+#查询本月过生日的学生
+select * from student where month(student.sage) = month(curdate());
+
+#查询下个月生日的学生
+select * from student where month(student.sage) = month(curdate()) + 1;
