@@ -1,0 +1,1083 @@
+ 8915  2021-03-18 16:22:54 root cd /data/wwwroot/
+ 8916  2021-03-18 16:22:54 root sl
+ 8917  2021-03-18 16:22:55 root ls
+ 8918  2021-03-18 16:23:03 root cd qpyx-parent/qpyx-app/
+ 8919  2021-03-18 16:23:04 root ls
+ 8920  2021-03-18 16:23:06 root cd target/
+ 8921  2021-03-18 16:23:07 root ls
+ 8922  2021-03-22 11:40:57 root cd zero
+ 8923  2021-03-22 11:40:58 root ls
+ 8924  2021-03-22 11:41:44 root yum install -y yum-utils device-mapper-persistent-data lvm2
+ 8925  2021-03-22 11:42:59 root yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
+ 8926  2021-03-22 11:51:37 root cd zero
+ 8927  2021-03-22 11:51:38 root ls
+ 8928  2021-03-22 11:51:52 root yum-config-manager --enable docker-ce-edge
+ 8929  2021-03-22 11:52:01 root yum install -y docker-ce
+ 8930  2021-03-22 11:53:02 root docker version
+ 8931  2021-03-22 11:53:14 root systemctl docker
+ 8932  2021-03-22 11:53:31 root systemctl start docker
+ 8933  2021-03-22 11:54:04 root docker version
+ 8934  2021-03-22 11:54:48 root ls
+ 8935  2021-03-22 11:56:00 root java version
+ 8936  2021-03-22 11:56:09 root java -version
+ 8937  2021-03-22 13:34:59 root docker version
+ 8938  2021-03-22 13:39:58 root docker images
+ 8939  2021-03-22 13:40:33 root docker ps
+ 8940  2021-03-22 13:42:11 root ls
+ 8941  2021-03-22 13:42:27 root vi Dockerfile
+ 8942  2021-03-22 13:50:13 root ls
+ 8943  2021-03-22 13:52:26 root cat Dockerfile
+ 8944  2021-03-22 13:56:15 root ifconfig
+ 8945  2021-03-22 14:04:40 root ls
+ 8946  2021-03-22 14:04:51 root vi Dockerfile
+ 8947  2021-03-22 14:06:17 root docker built -t DockerOne .
+ 8948  2021-03-22 14:07:39 root docker command --help
+ 8949  2021-03-22 14:10:25 root ls
+ 8950  2021-03-22 14:10:30 root docker built -t DockerOne .
+ 8951  2021-03-22 14:10:34 root ls
+ 8952  2021-03-22 14:15:23 root docker build -t DockerOne .
+ 8953  2021-03-22 14:15:52 root docker build -t BlockOne .
+ 8954  2021-03-22 14:16:19 root ls
+ 8955  2021-03-22 14:16:35 root vi Dockerfile
+ 8956  2021-03-22 14:18:12 root docker build -t blockOne .
+ 8957  2021-03-22 14:18:38 root vi Dockerfile
+ 8958  2021-03-22 14:19:15 root docker build -t blockOne .
+ 8959  2021-03-22 14:19:34 root docker build -t blockone .
+ 8960  2021-03-22 14:21:55 root docker images
+ 8961  2021-03-22 14:22:16 root docker run -it blockone
+ 8962  2021-03-22 14:23:10 root ls
+ 8963  2021-03-22 14:23:15 root cd zero
+ 8964  2021-03-22 14:23:16 root ls
+ 8965  2021-03-22 14:23:24 root docker ps
+ 8966  2021-03-22 14:23:58 root docker inspect 92a3e
+ 8967  2021-03-22 14:26:12 root curl 92a3e858723a:8080/scan
+ 8968  2021-03-22 14:27:16 root curl 92a3e:8080/scan
+ 8969  2021-03-22 14:27:53 root docker inspect 92a3e858723a
+ 8970  2021-03-22 14:28:02 root curl 92a3e858723a:8080/scan
+ 8971  2021-03-22 14:29:54 root docker ps
+ 8972  2021-03-22 14:30:52 root curl 172.17.0.2:8080/scan
+ 8973  2021-03-22 14:31:10 root curl 92a3e858723a:8080/scan
+ 8974  2021-03-22 14:32:24 root curl 172.17.0.2:8080/create
+ 8975  2021-03-22 14:36:27 root vi Dockerfile
+ 8976  2021-03-22 14:40:04 root history
+ 8977  2021-03-22 14:49:48 root curl 92a3e858723a:8080/scan
+ 8978  2021-03-22 14:49:56 root curl 172.17.0.2:8080/create
+ 8979  2021-03-22 16:45:04 root ls
+ 8980  2021-03-22 16:51:04 root cd node
+ 8981  2021-03-22 16:51:13 root vi Dockerfile
+ 8982  2021-03-22 16:57:10 root docker build -t blocktwo .
+ 8983  2021-03-22 16:57:17 root docker ps
+ 8984  2021-03-22 16:58:40 root docker images
+ 8985  2021-03-22 16:59:07 root docker run -it blocktwo
+ 8986  2021-03-22 16:59:56 root ls
+ 8987  2021-03-22 17:00:02 root cd zero/node
+ 8988  2021-03-22 17:00:02 root ls
+ 8989  2021-03-22 17:00:18 root docker ps
+ 8990  2021-03-22 17:00:38 root docker inspect 82603891b4e2
+ 8991  2021-03-22 17:01:50 root curl 82603891b4e2:8090/scan
+ 8992  2021-03-22 17:05:10 root curl 127.0.0.3:8090/scan
+ 8993  2021-03-22 17:05:25 root curl 127.17.0.3:8090/scan
+ 8994  2021-03-22 17:07:00 root curl 127.17.0.3:8090/mine
+ 8995  2021-03-22 17:07:33 root curl 172.17.0.3:8090/min
+ 8996  2021-03-22 17:07:41 root curl 172.17.0.3:8090/mine
+ 8997  2021-03-22 17:21:26 root curl 172.17.0.3:8090/create
+ 8998  2021-03-22 17:21:36 root curl 172.17.0.3:8090/mine
+ 8999  2021-03-22 11:16:39 root ll
+ 9000  2021-03-22 11:16:44 root cd /mnt/
+ 9001  2021-03-22 11:16:44 root ll
+ 9002  2021-03-22 11:16:50 root cd /data/wwwroot/
+ 9003  2021-03-22 11:16:51 root ll
+ 9004  2021-03-23 10:32:14 root ncv
+ 9005  2021-03-23 10:32:19 root ll
+ 9006  2021-03-23 10:32:26 root cat testadmin.qingpinyouxuan.com.conf 
+ 9007  2021-03-23 11:10:08 root history | grep zabbix
+ 9008  2021-03-23 11:10:37 root /etc/init.d/zabbix_server restart
+ 9009  2021-03-23 11:10:42 root /etc/init.d/zabbix_server status
+ 9010  2021-03-23 11:10:48 root ss -ntl
+ 9011  2021-03-23 11:10:52 root ncv
+ 9012  2021-03-23 11:10:53 root ls
+ 9013  2021-03-23 11:11:01 root cat testzabbix.qingpinyouxuan.com.conf
+ 9014  2021-03-23 11:25:58 root ncv
+ 9015  2021-03-23 11:26:01 root cd /data/wwwlogs/
+ 9016  2021-03-23 11:26:02 root ls
+ 9017  2021-03-23 11:26:05 root pwd
+ 9018  2021-03-23 11:26:19 root ncv
+ 9019  2021-03-23 11:26:20 root cd ..
+ 9020  2021-03-23 11:26:20 root ls
+ 9021  2021-03-23 11:26:23 root vim nginx.conf
+ 9022  2021-03-23 11:26:40 root cd /data/wwwlogs/
+ 9023  2021-03-23 11:26:50 root tail -n1 testapi.qingpinyouxuan.com_nginx.log
+ 9024  2021-03-23 11:31:16 root cd /data/wwwroot/
+ 9025  2021-03-23 11:31:17 root ls
+ 9026  2021-03-23 10:10:53 root ls
+ 9027  2021-03-23 10:10:56 root cd zero
+ 9028  2021-03-23 11:42:26 root cd ..
+ 9029  2021-03-23 11:42:31 root ls
+ 9030  2021-03-23 11:42:37 root cd ..
+ 9031  2021-03-23 11:42:39 root ls
+ 9032  2021-03-23 11:42:42 root cd data
+ 9033  2021-03-23 11:42:44 root ls
+ 9034  2021-03-23 11:42:48 root cd wwwlgos
+ 9035  2021-03-23 11:45:48 root wwwlogs
+ 9036  2021-03-23 11:45:53 root cd wwwlogs
+ 9037  2021-03-23 11:45:56 root ls
+ 9038  2021-03-23 11:46:07 root cd print-app
+ 9039  2021-03-23 11:46:08 root ls
+ 9040  2021-03-23 11:46:30 root tail -f all.log --line 1000
+ 9041  2021-03-23 11:50:21 root grep "马云" all.log
+ 9042  2021-03-23 11:56:20 root ls
+ 9043  2021-03-23 11:56:56 root less all.log
+ 9044  2021-03-23 12:11:25 root grep "shipTemplateMoneyDTO" all.log
+ 9045  2021-03-23 12:52:28 root cd ..
+ 9046  2021-03-23 12:52:29 root ls
+ 9047  2021-03-23 12:52:32 root cd data
+ 9048  2021-03-23 12:52:34 root ls
+ 9049  2021-03-23 12:52:41 root cd wwwlogs
+ 9050  2021-03-23 12:52:42 root ls
+ 9051  2021-03-23 12:52:48 root cd print-app
+ 9052  2021-03-23 12:52:50 root ls
+ 9053  2021-03-23 12:52:56 root grep "[root@test-qs-web03 print-app]#"
+ 9054  2021-03-23 12:53:28 root grep printShipMasterTemplateDTO all.log
+ 9055  2021-03-23 12:53:35 root ls
+ 9056  2021-03-23 12:53:50 root grep "printShipMasterTemplateDTO" all.log
+ 9057  2021-03-23 12:54:09 root cd ..
+ 9058  2021-03-23 12:54:16 root cd print-web
+ 9059  2021-03-23 12:54:17 root ls
+ 9060  2021-03-23 12:54:22 root grep "printShipMasterTemplateDTO" all.log
+ 9061  2021-03-23 12:57:47 root ls
+ 9062  2021-03-23 12:58:14 root grep "printShipMasterTemplateDTO" all.log
+ 9063  2021-03-23 12:58:49 root tail -f all.log --line 1000
+ 9064  2021-03-23 14:29:22 root cd ..
+ 9065  2021-03-23 14:29:23 root ls
+ 9066  2021-03-23 14:29:37 root cd print-app
+ 9067  2021-03-23 14:29:38 root ls
+ 9068  2021-03-23 14:29:45 root less all.log
+ 9069  2021-03-23 14:23:56 root cd /data/wwwroot/qpyx-parent/
+ 9070  2021-03-23 14:23:57 root ll
+ 9071  2021-03-23 14:24:00 root git branch
+ 9072  2021-03-23 14:33:17 root ls
+ 9073  2021-03-23 14:33:19 root cd ..
+ 9074  2021-03-23 14:33:20 root ls
+ 9075  2021-03-23 14:33:27 root cd data/wwwlogs
+ 9076  2021-03-23 14:33:28 root ls
+ 9077  2021-03-23 14:33:41 root cd print-app
+ 9078  2021-03-23 14:33:42 root ls
+ 9079  2021-03-23 14:34:49 root grep "shipTemplateMoneyDTO" all.log
+ 9080  2021-03-23 15:48:15 root ls
+ 9081  2021-03-23 15:48:18 root cd zero
+ 9082  2021-03-23 15:48:20 root docker ps
+ 9083  2021-03-23 15:48:39 root docker inspect ea3e
+ 9084  2021-03-23 15:56:42 root curl ea3e:8090/scan
+ 9085  2021-03-23 15:59:16 root docker ps
+ 9086  2021-03-23 15:59:37 root curl ea3e11a7c8a4:8090/scan
+ 9087  2021-03-23 16:00:16 root curl 172.17.0.2:8090/scan
+ 9088  2021-03-23 15:38:24 root ls
+ 9089  2021-03-23 15:38:28 root cd zero
+ 9090  2021-03-23 15:38:30 root ls
+ 9091  2021-03-23 15:38:33 root docker ps
+ 9092  2021-03-23 15:39:07 root docker duild -t blockone .
+ 9093  2021-03-23 15:39:40 root docker start
+ 9094  2021-03-23 15:45:03 root ls
+ 9095  2021-03-23 15:45:17 root docker build -t blockone .
+ 9096  2021-03-23 15:45:33 root docker ps
+ 9097  2021-03-23 15:45:41 root docker images
+ 9098  2021-03-23 15:47:20 root docker run -it blockone
+ 9099  2021-03-23 15:53:36 root ls
+ 9100  2021-03-23 15:53:38 root cd zero
+ 9101  2021-03-23 15:53:40 root cd node
+ 9102  2021-03-23 15:53:42 root ls
+ 9103  2021-03-23 15:53:44 root docker ps
+ 9104  2021-03-23 16:01:59 root docker stop 1921356a0798
+ 9105  2021-03-23 16:02:15 root docker stop ea3e11a7c8a4
+ 9106  2021-03-23 16:02:20 root docker ps
+ 9107  2021-03-23 15:49:46 root cd 
+ 9108  2021-03-23 15:49:47 root ls
+ 9109  2021-03-23 15:49:50 root cd zero
+ 9110  2021-03-23 15:49:51 root cd node
+ 9111  2021-03-23 15:49:52 root ls
+ 9112  2021-03-23 15:50:02 root docker build -t blocktow
+ 9113  2021-03-23 15:50:07 root docker build -t blocktwo
+ 9114  2021-03-23 15:50:48 root docker build -t blocktwo .
+ 9115  2021-03-23 15:51:13 root docker run -it blocktwo
+ 9116  2021-03-23 14:55:09 root cd ..
+ 9117  2021-03-23 14:55:10 root ls
+ 9118  2021-03-23 14:55:13 root cd data
+ 9119  2021-03-23 14:55:13 root ls
+ 9120  2021-03-23 14:55:21 root cd wwwlogs
+ 9121  2021-03-23 14:55:22 root ls
+ 9122  2021-03-23 15:16:55 root cd ..
+ 9123  2021-03-23 15:16:59 root ls
+ 9124  2021-03-23 15:17:04 root cd ..
+ 9125  2021-03-23 15:17:05 root ls
+ 9126  2021-03-23 15:17:08 root cd .. 
+ 9127  2021-03-23 15:17:20 root cd home
+ 9128  2021-03-23 15:17:21 root ls
+ 9129  2021-03-23 16:28:01 root free -h
+ 9130  2021-03-23 16:04:10 root cd /data/wwwroot/qpyx-parent/
+ 9131  2021-03-23 16:04:11 root ls
+ 9132  2021-03-23 16:04:13 root git pull
+ 9133  2021-03-23 16:04:34 root git checkout .
+ 9134  2021-03-23 16:04:37 root git pull
+ 9135  2021-03-23 16:04:45 root git status
+ 9136  2021-03-23 16:04:56 root git status -a
+ 9137  2021-03-23 16:05:02 root git branch -a
+ 9138  2021-03-23 16:05:08 root git checkout pyx-1.3.0
+ 9139  2021-03-23 16:05:12 root git checkout pyx-1.3.1
+ 9140  2021-03-23 16:05:17 root git checkout qpyx-1.3.1
+ 9141  2021-03-23 16:05:20 root git pull
+ 9142  2021-03-23 16:09:41 root git status -a
+ 9143  2021-03-23 16:09:48 root git branch -a
+ 9144  2021-03-23 18:21:57 root cd /data/wwwroot/light_life_admin_web/
+ 9145  2021-03-23 18:21:57 root ll
+ 9146  2021-03-23 18:22:02 root git status
+ 9147  2021-03-23 19:50:48 root ls
+ 9148  2021-03-23 19:50:53 root cd zero
+ 9149  2021-03-23 19:50:54 root ls
+ 9150  2021-03-23 19:51:14 root docker build -t blockone
+ 9151  2021-03-23 19:51:19 root docker build -t blockone .
+ 9152  2021-03-23 19:51:45 root docker run -it blockone
+ 9153  2021-03-23 17:16:35 root ls
+ 9154  2021-03-23 17:16:44 root cd ..
+ 9155  2021-03-23 17:16:45 root ls
+ 9156  2021-03-23 17:16:55 root cd data/wwwlogs/print-app
+ 9157  2021-03-23 17:16:56 root ls
+ 9158  2021-03-23 17:17:28 root grep "findDataByProvince" all.log
+ 9159  2021-03-23 20:34:21 root ls
+ 9160  2021-03-23 20:34:25 root cd ..
+ 9161  2021-03-23 20:34:26 root ls
+ 9162  2021-03-23 20:34:31 root cd data/wwwlogs
+ 9163  2021-03-23 20:34:39 root cd print-app
+ 9164  2021-03-23 20:34:40 root ls
+ 9165  2021-03-23 20:34:58 root tail -f all.log --line 1000
+ 9166  2021-03-23 19:57:18 root docker ps
+ 9167  2021-03-23 19:57:29 root docker inspect 62b02b9f2556
+ 9168  2021-03-23 19:57:59 root docker ps
+ 9169  2021-03-23 19:58:22 root docker inspect 6a76d5e4ca4f
+ 9170  2021-03-23 19:52:26 root ls
+ 9171  2021-03-23 19:52:32 root docker ps
+ 9172  2021-03-23 19:52:47 root ls
+ 9173  2021-03-23 19:52:50 root cd zero
+ 9174  2021-03-23 19:52:51 root ls
+ 9175  2021-03-23 19:52:54 root cd node
+ 9176  2021-03-23 19:53:59 root docker build -t blocktwo .
+ 9177  2021-03-23 19:54:16 root docker run -it blocktwo
+ 9178  2021-03-23 20:01:36 root ls
+ 9179  2021-03-23 20:01:43 root cd zero
+ 9180  2021-03-23 20:01:46 root cd node
+ 9181  2021-03-23 20:01:47 root ls
+ 9182  2021-03-23 20:01:53 root docker ps
+ 9183  2021-03-23 20:02:01 root cd ..
+ 9184  2021-03-23 20:02:26 root docker build -t blockone
+ 9185  2021-03-23 20:02:30 root docker build -t blockone .
+ 9186  2021-03-23 20:02:48 root docker run -it blockone
+ 9187  2021-03-23 20:30:57 root ls
+ 9188  2021-03-23 20:31:01 root cd ..
+ 9189  2021-03-23 20:31:02 root ls
+ 9190  2021-03-23 20:31:07 root cd data/wwwlogs
+ 9191  2021-03-23 20:31:10 root ls
+ 9192  2021-03-23 20:31:22 root cd print-app
+ 9193  2021-03-23 20:31:22 root ls
+ 9194  2021-03-23 20:31:50 root grep "500" err.log
+ 9195  2021-03-23 20:32:02 root grep "500" all.log
+ 9196  2021-03-23 20:03:57 root ls
+ 9197  2021-03-23 20:35:58 root curl 172.17.0.2/8080/scan
+ 9198  2021-03-23 20:40:52 root ls
+ 9199  2021-03-23 20:40:53 root cd ..
+ 9200  2021-03-23 20:40:54 root ls
+ 9201  2021-03-23 20:40:58 root cd data
+ 9202  2021-03-23 20:40:59 root ls
+ 9203  2021-03-23 20:41:04 root cd wwwlogs
+ 9204  2021-03-23 20:41:05 root ls
+ 9205  2021-03-23 20:41:11 root cd print-app
+ 9206  2021-03-23 20:41:16 root ls
+ 9207  2021-03-23 20:41:39 root tail -f all.log --line 1000
+ 9208  2021-03-23 20:44:11 root grep "supplierId" all.log
+ 9209  2021-03-23 20:47:48 root grep "loanId" all.log
+ 9210  2021-03-23 23:10:46 root ls
+ 9211  2021-03-23 23:10:49 root docker ps
+ 9212  2021-03-23 23:11:58 root docker inspect 3f8495d62b01
+ 9213  2021-03-23 23:12:09 root docker ps
+ 9214  2021-03-23 23:12:23 root docker inspect 33b9303dfa67
+ 9215  2021-03-23 23:13:22 root curl 172.17.0.2:8080/scan
+ 9216  2021-03-23 23:16:00 root curl 172.17.0.3:8090/scan
+ 9217  2021-03-23 23:29:12 root curl 172.17.0.2:8080/create
+ 9218  2021-03-23 23:29:20 root curl 172.17.0.2:8080/mine
+ 9219  2021-03-23 23:31:00 root curl 172.17.0.3:8090/scan
+ 9220  2021-03-23 23:31:39 root curl 172.17.0.3:8080/scan
+ 9221  2021-03-23 23:33:29 root curl 172.17.0.3:8090/scan
+ 9222  2021-03-23 23:33:55 root curl 172.17.0.3:8090/create
+ 9223  2021-03-23 23:34:10 root curl 172.17.0.3:8080/scan
+ 9224  2021-03-23 23:35:56 root curl 172.17.0.3:8090/scan
+ 9225  2021-03-23 23:09:04 root ls
+ 9226  2021-03-23 23:09:11 root cd node
+ 9227  2021-03-23 23:09:13 root ls
+ 9228  2021-03-23 23:09:15 root cd zero
+ 9229  2021-03-23 23:09:25 root cd node
+ 9230  2021-03-23 23:09:48 root docker build -t blocktwo
+ 9231  2021-03-23 23:09:52 root docker build -t blocktwo .
+ 9232  2021-03-23 23:10:12 root docker run -it blocktwo
+ 9233  2021-03-23 23:06:46 root ls
+ 9234  2021-03-23 23:06:48 root cd zero
+ 9235  2021-03-23 23:06:49 root ls
+ 9236  2021-03-23 23:07:59 root docker build -t blockone .
+ 9237  2021-03-23 23:08:16 root docker run -it blockone
+ 9238  2021-03-23 22:40:28 root history | grep mysql
+ 9239  2021-03-24 13:45:11 root ls
+ 9240  2021-03-24 13:45:13 root cd data
+ 9241  2021-03-24 13:45:14 root ls
+ 9242  2021-03-24 13:45:20 root cd ..
+ 9243  2021-03-24 13:45:28 root cd data/wwwlogs
+ 9244  2021-03-24 13:45:28 root ls
+ 9245  2021-03-24 13:45:32 root cd print-web
+ 9246  2021-03-24 13:45:33 root ls
+ 9247  2021-03-24 13:45:49 root grep "500" all.log
+ 9248  2021-03-24 13:46:40 root grep "deleteBatchIds" all.log
+ 9249  2021-03-24 13:47:52 root tail -f all.log --line 100
+ 9250  2021-03-24 16:07:49 root ls
+ 9251  2021-03-24 16:07:51 root cd zero
+ 9252  2021-03-24 16:07:52 root ls
+ 9253  2021-03-24 16:07:56 root docker ps
+ 9254  2021-03-24 16:07:57 root ls
+ 9255  2021-03-24 16:08:18 root docker inspect 
+ 9256  2021-03-24 16:08:20 root 9782688f9a95
+ 9257  2021-03-24 16:08:34 root docker inspect 9782688f9a95
+ 9258  2021-03-24 16:08:40 root docker ps
+ 9259  2021-03-24 16:09:01 root docker inspect 11e7c2c7224f
+ 9260  2021-03-24 16:09:09 root docker ps
+ 9261  2021-03-24 16:10:24 root curl 172.17.0.2:8080/scan
+ 9262  2021-03-24 16:10:47 root crul 172.17.0.2:8080/create
+ 9263  2021-03-24 16:11:00 root curl 172.17.0.2:8080/create
+ 9264  2021-03-24 16:11:13 root curl 172.17.0.2:8080/mine
+ 9265  2021-03-24 16:06:25 root ls
+ 9266  2021-03-24 16:06:27 root ce zero
+ 9267  2021-03-24 16:06:33 root cd zero
+ 9268  2021-03-24 16:06:34 root ls
+ 9269  2021-03-24 16:06:37 root cd node
+ 9270  2021-03-24 16:06:38 root ls
+ 9271  2021-03-24 16:06:52 root docker build -t blocktwo .
+ 9272  2021-03-24 16:07:09 root docker run -it blocktwo
+ 9273  2021-03-24 15:21:38 root ls
+ 9274  2021-03-24 15:21:40 root cd zero
+ 9275  2021-03-24 15:22:17 root docker build -t blockone .
+ 9276  2021-03-24 16:05:28 root docker run -it blockone
+ 9277  2021-03-24 16:14:16 root cd /
+ 9278  2021-03-24 16:14:28 root cd data/wwwlogs/
+ 9279  2021-03-24 16:14:30 root ls
+ 9280  2021-03-25 09:41:28 root cd zero
+ 9281  2021-03-25 09:41:31 root ls
+ 9282  2021-03-25 09:41:48 root docker build -t blockone .
+ 9283  2021-03-25 09:41:59 root docker run -it blockone
+ 9284  2021-03-25 09:45:26 root ls
+ 9285  2021-03-25 09:45:30 root cat Dockerfile 
+ 9286  2021-03-25 09:46:22 root docker build -t blockone .
+ 9287  2021-03-25 09:46:25 root docker run -it blockone
+ 9288  2021-03-25 09:48:50 root ls
+ 9289  2021-03-25 09:42:41 root docker build -t blocktwo  .
+ 9290  2021-03-25 09:42:56 root cd zero/
+ 9291  2021-03-25 09:42:57 root docker build -t blocktwo  .
+ 9292  2021-03-25 09:43:13 root docker run -it blocktwo 
+ 9293  2021-03-25 09:43:55 root docker ps
+ 9294  2021-03-25 09:44:05 root cd node
+ 9295  2021-03-25 09:44:06 root ls
+ 9296  2021-03-25 09:44:16 root docker build -t blocktwo .
+ 9297  2021-03-25 09:44:46 root docker run -it blocktwo
+ 9298  2021-03-25 13:46:14 root ip a
+ 9299  2021-03-25 13:46:24 root echo $branch | cut -d/ -f2
+ 9300  2021-03-25 13:47:36 root git checkout master
+ 9301  2021-03-25 13:49:29 root git branch
+ 9302  2021-03-25 13:50:44 root cd /jenkins_script/
+ 9303  2021-03-25 13:50:44 root ls
+ 9304  2021-03-25 13:51:07 root vim qpyx-app-start.sh 
+ 9305  2021-03-25 14:27:35 root ncv
+ 9306  2021-03-25 14:27:36 root ls
+ 9307  2021-03-25 14:27:48 root cat testzabbix.qingpinyouxuan.com.conf
+ 9308  2021-03-25 14:29:17 root cd /usr/local/zabbix/
+ 9309  2021-03-25 14:29:18 root ls
+ 9310  2021-03-25 14:29:21 root pwd
+ 9311  2021-03-25 14:29:30 root cd ..
+ 9312  2021-03-25 14:29:31 root ls
+ 9313  2021-03-25 14:30:31 root ll /jenkins_script/
+ 9314  2021-03-25 14:30:44 root cat /jenkins_script/monitor-start.sh 
+ 9315  2021-03-25 14:07:47 root git branch -a
+ 9316  2021-03-25 14:08:40 root cd  /data/wwwroot/qpyx-parent/
+ 9317  2021-03-25 14:08:42 root git branch -a
+ 9318  2021-03-25 14:08:59 root git branch
+ 9319  2021-03-25 14:12:33 root mvn -v
+ 9320  2021-03-25 14:15:49 root git log
+ 9321  2021-03-25 14:38:57 root cd /jenkins_script/
+ 9322  2021-03-25 14:38:58 root ll
+ 9323  2021-03-25 14:39:08 root ncv
+ 9324  2021-03-25 14:39:12 root ll
+ 9325  2021-03-25 14:39:33 root cd ..
+ 9326  2021-03-25 14:39:34 root ll
+ 9327  2021-03-25 14:39:37 root ll sslkey/
+ 9328  2021-03-25 14:56:58 root cd /data/wwwroot/print-parent/print-app/target
+ 9329  2021-03-25 14:56:59 root ll
+ 9330  2021-03-25 15:40:01 root cat /root/.ssh/id_rsa.pub 
+ 9331  2021-03-25 14:55:40 root cd /jenkins_script/
+ 9332  2021-03-25 14:55:41 root ll
+ 9333  2021-03-25 14:55:50 root vim print-app-start.sh 
+ 9334  2021-03-25 16:22:10 root cd ../data/wwwlogs/qpyx-app/
+ 9335  2021-03-25 16:22:15 root tail -f all.log 
+ 9336  2021-03-25 15:58:39 root cat .ssh/id_rsa.pub 
+ 9337  2021-03-25 16:04:02 root ls
+ 9338  2021-03-25 16:04:04 root cd zero
+ 9339  2021-03-25 16:04:05 root ls
+ 9340  2021-03-25 16:04:09 root cd node
+ 9341  2021-03-25 16:04:10 root ls
+ 9342  2021-03-25 16:43:48 root cd /
+ 9343  2021-03-25 16:43:49 root ls
+ 9344  2021-03-25 16:43:51 root cd data
+ 9345  2021-03-25 16:43:52 root ls
+ 9346  2021-03-25 16:43:59 root cd wwwlogs
+ 9347  2021-03-25 16:44:04 root ls
+ 9348  2021-03-25 16:44:08 root cd print-app
+ 9349  2021-03-25 16:44:09 root ls
+ 9350  2021-03-25 16:44:14 root ll
+ 9351  2021-03-25 16:44:48 root less all.log
+ 9352  2021-03-25 16:46:49 root ll
+ 9353  2021-03-25 16:47:06 root less all.log
+ 9354  2021-03-25 16:48:29 root ls
+ 9355  2021-03-25 16:48:35 root cd ..
+ 9356  2021-03-25 16:48:36 root ls
+ 9357  2021-03-25 16:48:38 root cd data
+ 9358  2021-03-25 16:48:39 root ls
+ 9359  2021-03-25 16:48:42 root cd wwwlogs
+ 9360  2021-03-25 16:48:43 root ls
+ 9361  2021-03-25 16:48:54 root cd print-app
+ 9362  2021-03-25 16:48:55 root ls
+ 9363  2021-03-25 16:49:09 root less err.log
+ 9364  2021-03-25 16:49:51 root less -e err.log
+ 9365  2021-03-23 11:46:11 root cd /data/wwwlogs/print-app/
+ 9366  2021-03-23 11:46:15 root less all.log
+ 9367  2021-03-23 11:46:27 root ll
+ 9368  2021-03-23 14:56:12 root echo envi | ncat 121.40.56.219 2181
+ 9369  2021-03-24 10:46:59 root less all.log
+ 9370  2021-03-24 16:42:53 root cd ../qpyx-web/
+ 9371  2021-03-24 16:42:55 root less all.log
+ 9372  2021-03-24 17:18:55 root cd ../qpyx-app/
+ 9373  2021-03-24 17:18:57 root less all.log
+ 9374  2021-03-25 10:56:37 root cd ../qpyx-web/
+ 9375  2021-03-25 10:56:39 root less all.log
+ 9376  2021-03-25 12:58:04 root tail -f all.log
+ 9377  2021-03-25 14:47:18 root cd ../qpyx-app/
+ 9378  2021-03-25 14:47:20 root less all.log
+ 9379  2021-03-25 14:55:37 root less allj.log
+ 9380  2021-03-25 14:55:40 root less all.log
+ 9381  2021-03-25 14:56:29 root cd ../qpyx-web/
+ 9382  2021-03-25 14:56:31 root less all.log
+ 9383  2021-03-25 16:30:18 root history
+ 9384  2021-03-25 16:40:03 root less all.log
+ 9385  2021-03-26 09:52:21 root history |grep jdk
+ 9386  2021-03-26 09:53:19 root history 
+ 9387  2021-03-26 09:53:51 root history > 1.txt
+ 9388  2021-03-26 09:53:56 root sz 1.txt 
+ 9389  2021-03-26 10:35:28 root cd /usr/local/src/
+ 9390  2021-03-26 10:35:29 root ls
+ 9391  2021-03-26 10:36:08 root docker ps
+ 9392  2021-03-26 10:36:11 root docker ps -a
+ 9393  2021-03-26 10:36:26 root docker images
+ 9394  2021-03-26 10:40:07 root cd zabbix-4.0.27/
+ 9395  2021-03-26 10:40:08 root ls
+ 9396  2021-03-26 14:49:37 root cd ../data/wwwlogs/print-app/p
+ 9397  2021-03-26 14:49:39 root cd ../data/wwwlogs/print-app/
+ 9398  2021-03-26 14:49:43 root tail -f all.log 
+ 9399  2021-03-26 17:59:10 root ls
+ 9400  2021-03-26 17:59:13 root cd ..
+ 9401  2021-03-26 17:59:15 root ls
+ 9402  2021-03-26 17:59:24 root cd data
+ 9403  2021-03-26 17:59:25 root ls
+ 9404  2021-03-26 17:59:31 root cd www.root
+ 9405  2021-03-26 17:59:35 root cd wwwroot
+ 9406  2021-03-26 17:59:36 root ls
+ 9407  2021-03-26 18:00:05 root ll
+ 9408  2021-03-26 18:00:10 root cd monitor
+ 9409  2021-03-26 18:00:10 root ls
+ 9410  2021-03-26 16:14:36 root cd /data/wwwroot/wow_print/dist/
+ 9411  2021-03-26 16:14:40 root rz
+ 9412  2021-03-26 16:14:46 root ls
+ 9413  2021-03-26 16:15:09 root pwd
+ 9414  2021-03-26 16:16:53 root ncv
+ 9415  2021-03-26 16:16:54 root ls
+ 9416  2021-03-26 16:17:23 root cat ssl_testweb.qingpinyouxuan.com.conf 
+ 9417  2021-03-26 16:14:00 root ncv
+ 9418  2021-03-26 16:14:01 root ls
+ 9419  2021-03-26 16:14:07 root vim ssl_testh5.wayinkeji.com.conf 
+ 9420  2021-03-26 16:15:34 root nginx -s reload
+ 9421  2021-03-26 16:16:17 root vim ssl_testh5.wayinkeji.com.conf 
+ 9422  2021-03-26 16:16:27 root nginx -s reload
+ 9423  2021-03-26 16:16:45 root vim ssl_testh5.wayinkeji.com.conf 
+ 9424  2021-03-26 16:17:46 root nginx -s reload
+ 9425  2021-03-26 16:18:07 root vim ssl_testh5.wayinkeji.com.conf 
+ 9426  2021-03-26 16:18:28 root nginx -s reload
+ 9427  2021-03-26 16:21:44 root vim ssl_testh5.wayinkeji.com.conf 
+ 9428  2021-03-26 16:21:53 root nginx -s reload
+ 9429  2021-03-26 16:18:35 root nvc
+ 9430  2021-03-26 16:18:39 root ncv
+ 9431  2021-03-26 16:18:41 root ll
+ 9432  2021-03-26 16:18:44 root ll -a
+ 9433  2021-03-26 16:21:41 root cat ssl_testh5.wayinkeji.com.conf
+ 9434  2021-03-26 16:26:23 root docker -V
+ 9435  2021-03-26 16:26:33 root docker ps -a
+ 9436  2021-03-26 16:26:41 root docker -V
+ 9437  2021-03-26 16:26:49 root docker -v
+ 9438  2021-03-26 16:27:32 root free -m
+ 9439  2021-03-26 16:30:05 root where is yarn
+ 9440  2021-03-26 16:30:09 root whereis yarn
+ 9441  2021-03-26 16:40:41 root node -v
+ 9442  2021-03-26 16:42:51 root npm list
+ 9443  2021-03-26 16:43:14 root npm status
+ 9444  2021-03-26 16:46:05 root  pm2 list
+ 9445  2021-03-26 16:52:37 root yrm ls
+ 9446  2021-03-26 16:53:12 root yarn config get registry
+ 9447  2021-03-29 10:44:54 root cd ..
+ 9448  2021-03-29 10:44:55 root ls
+ 9449  2021-03-29 10:44:57 root cd data
+ 9450  2021-03-29 10:44:58 root ls
+ 9451  2021-03-29 10:45:01 root cd wwwlogs
+ 9452  2021-03-29 10:45:02 root ls
+ 9453  2021-03-29 10:47:57 root cd print-app
+ 9454  2021-03-29 10:47:58 root ls
+ 9455  2021-03-29 10:48:10 root less all.log
+ 9456  2021-03-29 09:44:19 root cd /usr/local/redis/
+ 9457  2021-03-29 09:44:20 root ls
+ 9458  2021-03-29 09:44:23 root vim etc/redis.conf 
+ 9459  2021-03-29 09:45:49 root vim etc/redis.conf
+ 9460  2021-03-29 11:29:39 root cd ..
+ 9461  2021-03-29 11:29:40 root ls
+ 9462  2021-03-29 11:29:42 root cd data
+ 9463  2021-03-29 11:29:42 root ls
+ 9464  2021-03-29 11:29:46 root cd wwwlogs
+ 9465  2021-03-29 11:29:47 root ls
+ 9466  2021-03-29 11:29:53 root cd print-app
+ 9467  2021-03-29 11:29:53 root ls
+ 9468  2021-03-29 11:29:59 root less all.log
+ 9469  2021-03-29 11:37:24 root ls
+ 9470  2021-03-29 11:38:00 root less all.log
+ 9471  2021-03-29 17:45:00 root ls
+ 9472  2021-03-29 17:45:04 root cd ..
+ 9473  2021-03-29 17:45:05 root ls
+ 9474  2021-03-29 17:45:14 root cd data/www.ogs
+ 9475  2021-03-29 17:45:18 root cd data/wwwlogs
+ 9476  2021-03-29 17:45:19 root ls
+ 9477  2021-03-29 17:45:30 root cd print-app
+ 9478  2021-03-29 17:45:30 root ls
+ 9479  2021-03-29 17:45:38 root less err.log
+ 9480  2021-03-29 17:46:49 root less all.log
+ 9481  2021-03-29 17:50:03 root grep -C 5 "afterDiscountMoney" all.lgo
+ 9482  2021-03-29 17:50:07 root grep -C 5 "afterDiscountMoney" all.log
+ 9483  2021-03-29 17:50:45 root grep -C 5 "8201-exec-6" all.log
+ 9484  2021-03-29 11:05:22 root ls
+ 9485  2021-03-29 11:05:24 root cd ..
+ 9486  2021-03-29 11:05:25 root ls
+ 9487  2021-03-29 11:05:32 root cd ../data/wwwlogs/qpyx-app/
+ 9488  2021-03-29 11:05:32 root ls
+ 9489  2021-03-29 11:05:36 root less all.log 
+ 9490  2021-03-29 11:07:15 root tail -f all.log 
+ 9491  2021-03-30 10:20:30 root ls
+ 9492  2021-03-30 10:20:34 root less all.log 
+ 9493  2021-03-29 18:09:32 root history | grep redis
+ 9494  2021-03-29 18:09:47 root  vim /usr/local/redis/etc/redis.conf
+ 9495  2021-03-30 11:21:03 root nginx -V
+ 9496  2021-03-30 11:36:53 root ncv 
+ 9497  2021-03-30 11:36:54 root ls
+ 9498  2021-03-30 11:36:56 root cd ..
+ 9499  2021-03-30 11:36:58 root vim nginx.conf
+ 9500  2021-03-30 11:37:11 root ls
+ 9501  2021-03-30 11:37:13 root cd ..
+ 9502  2021-03-30 11:37:14 root ls
+ 9503  2021-03-30 11:37:40 root ls html/
+ 9504  2021-03-30 11:37:49 root ls logs/
+ 9505  2021-03-30 11:37:54 root ll -h logs/
+ 9506  2021-03-30 14:35:23 root ls
+ 9507  2021-03-30 14:35:28 root cd zero
+ 9508  2021-03-30 14:35:28 root ls
+ 9509  2021-03-30 14:35:30 root cd node
+ 9510  2021-03-30 14:35:46 root docker build -t blocktwo
+ 9511  2021-03-30 14:35:49 root docker build -t blocktwo .
+ 9512  2021-03-30 14:35:51 root ls
+ 9513  2021-03-30 14:36:04 root docker ps
+ 9514  2021-03-30 14:36:13 root docker run -it blocktwo
+ 9515  2021-03-30 14:33:24 root ls
+ 9516  2021-03-30 14:33:28 root cd zero
+ 9517  2021-03-30 14:33:29 root ls
+ 9518  2021-03-30 14:34:14 root docker build -t blockone .
+ 9519  2021-03-30 14:35:07 root docker run -it blockone
+ 9520  2021-03-30 15:50:55 root docker ps
+ 9521  2021-03-30 15:57:45 root docker inspect 66a5abc5915d
+ 9522  2021-03-30 15:58:12 root curl 172.17.0.4:8080/scan
+ 9523  2021-03-30 15:58:30 root curl 172.17.0.4:8080/create
+ 9524  2021-03-30 15:58:56 root curl 172.17.0.4:8080/mine
+ 9525  2021-03-30 15:56:51 root docker inspect 300387dcc657
+ 9526  2021-03-30 15:59:31 root curl 172.17.0.5/scan
+ 9527  2021-03-30 15:59:48 root curl 172.17.0.5:8090/scan
+ 9528  2021-03-30 16:00:01 root curl 172.17.0.5:8090/create
+ 9529  2021-03-30 16:00:18 root curl 172.17.0.5:8090/scan
+ 9530  2021-03-30 16:00:31 root curl 172.17.0.5:8090/scanData
+ 9531  2021-03-30 16:01:16 root curl 172.17.0.5:8090/scan
+ 9532  2021-03-30 16:03:16 root docker ps 
+ 9533  2021-03-30 16:03:25 root docker 66a5abc5915d
+ 9534  2021-03-30 16:03:42 root docker stop  66a5abc5915d
+ 9535  2021-03-30 16:04:25 root docker stop  300387dcc657
+ 9536  2021-03-30 15:27:28 root ls
+ 9537  2021-03-30 15:27:46 root cd zero
+ 9538  2021-03-30 15:27:46 root ls
+ 9539  2021-03-30 15:27:58 root docker build -t blockone.
+ 9540  2021-03-30 15:28:02 root docker build -t blockone .
+ 9541  2021-03-30 15:28:13 root docker run -it blockone
+ 9542  2021-03-30 15:28:24 root ls
+ 9543  2021-03-30 15:28:33 root cd zero/node
+ 9544  2021-03-30 15:28:34 root ls
+ 9545  2021-03-30 15:28:46 root docker build -t blocktwo .
+ 9546  2021-03-30 15:29:00 root docker run -it blocktwo
+ 9547  2021-03-31 11:22:12 root node -V
+ 9548  2021-03-31 11:22:15 root node -v
+ 9549  2021-03-31 11:42:37 root cd /usr/
+ 9550  2021-03-31 11:42:38 root ll
+ 9551  2021-03-31 11:42:43 root ll local/
+ 9552  2021-03-31 15:39:26 root  ping 172.16.0.88
+ 9553  2021-03-31 15:39:43 root ping 192.168.1.114
+ 9554  2021-03-31 15:40:01 root ssh 192.168.1.114
+ 9555  2021-03-31 16:18:41 root ip a
+ 9556  2021-03-31 16:19:01 root cat .ssh/authorized_keys 
+ 9557  2021-03-31 16:19:12 root cat .ssh/known_hosts 
+ 9558  2021-03-31 13:46:30 root docker ps
+ 9559  2021-03-31 13:46:36 root docker ps -a
+ 9560  2021-03-31 13:46:58 root docker images
+ 9561  2021-03-31 13:47:32 root df -h
+ 9562  2021-03-31 13:48:41 root docker rm 'docker ps -qa'
+ 9563  2021-03-31 13:49:04 root docker rm 92a3e858723a 82603891b4e2 ea3e11a7c8a4 1921356a0798 6a76d5e4ca4f 62b02b9f2556 c48c4c2a8e41 33b9303dfa67 3f8495d62b01
+ 9564  2021-03-31 13:49:10 root docker ps -a
+ 9565  2021-03-31 13:49:45 root docker rm 11e7c2c7224f 9782688f9a95 f5b1131fbfef 44540c9dbfc4  cd1b19cd496f
+ 9566  2021-03-31 13:49:50 root docker ps -a
+ 9567  2021-03-31 13:49:54 root docker images
+ 9568  2021-03-31 13:50:12 root docker rmi 2274ea33a790 9e2453093283 5c678fa1eb42
+ 9569  2021-03-31 13:50:22 root df -h
+ 9570  2021-03-31 13:50:32 root docker images
+ 9571  2021-03-31 13:50:46 root find / -size +300m
+ 9572  2021-03-31 13:50:49 root find / -size +300M
+ 9573  2021-03-31 13:52:00 root cd /opt/oneinstack/
+ 9574  2021-03-31 13:52:01 root ls
+ 9575  2021-03-31 13:52:26 root history |grep install.sh
+ 9576  2021-03-31 13:52:53 root ll /data/mysql/
+ 9577  2021-03-31 13:52:56 root ll /data/mysql/ -h
+ 9578  2021-03-31 13:53:20 root ls /usr/local/mysql/lib/libmysqld.a
+ 9579  2021-03-31 13:53:25 root ll -h /usr/local/mysql/lib/libmysqld.a 
+ 9580  2021-03-31 13:53:38 root tail -10 /usr/local/mysql/lib/libmysqld.a
+ 9581  2021-03-31 15:14:48 root ncv 
+ 9582  2021-03-31 15:14:49 root ls
+ 9583  2021-03-31 15:14:55 root cd /data/wwwroot/monitor/
+ 9584  2021-03-31 15:14:56 root ls
+ 9585  2021-03-31 15:14:57 root cd 
+ 9586  2021-03-31 15:15:03 root cd /data/wwwlogs/
+ 9587  2021-03-31 15:15:03 root ls
+ 9588  2021-03-31 15:15:44 root ls print-app/
+ 9589  2021-03-31 15:15:59 root ls qpyx-app/
+ 9590  2021-03-31 15:18:58 root ifconfig 
+ 9591  2021-03-31 15:19:17 root ll qpyx-app/
+ 9592  2021-03-31 15:19:27 root ll -h qpyx-app/
+ 9593  2021-03-31 15:21:21 root cd qpyx-app/
+ 9594  2021-03-31 15:21:22 root pwd
+ 9595  2021-03-31 15:22:06 root tail -f all.log 
+ 9596  2021-03-31 15:22:11 root tail -n1000 all.log 
+ 9597  2021-04-01 10:38:04 root passwd root
+ 9598  2021-04-01 10:14:12 root ping www.wayinkeji.com
+ 9599  2021-04-01 16:47:22 root passwd root
+ 9600  2021-04-01 14:40:12 root curl http://ad.partner.gifshow.com/track/activate
+ 9601  2021-04-01 10:55:43 root ls
+ 9602  2021-04-01 10:55:46 root cd ../
+ 9603  2021-04-01 10:55:46 root ls
+ 9604  2021-04-01 10:55:50 root cd data/wwwlogs/
+ 9605  2021-04-01 10:55:51 root ls
+ 9606  2021-04-01 10:55:54 root cd qpyx-app/
+ 9607  2021-04-01 10:55:57 root less all.log 
+ 9608  2021-04-01 14:29:44 root ls
+ 9609  2021-04-01 14:29:47 root less all.log 
+ 9610  2021-04-01 14:33:26 root less all.2021-03-29.0.log
+ 9611  2021-04-01 17:22:16 root less all.log 
+ 9612  2021-04-01 17:22:26 root ls
+ 9613  2021-04-01 17:22:27 root cd ..
+ 9614  2021-04-01 17:22:28 root ls
+ 9615  2021-04-01 17:22:32 root cd qpyx-web/
+ 9616  2021-04-01 17:22:34 root ls
+ 9617  2021-04-01 17:22:37 root less all.log 
+ 9618  2021-04-02 09:32:00 root history |grep mysql
+ 9619  2021-04-02 09:32:12 root netstat -lntp
+ 9620  2021-04-02 09:32:21 root mysql -u root -poxuyow80
+ 9621  2021-04-02 17:04:58 root ls
+ 9622  2021-04-02 17:05:05 root cd ../data/wwwlogs/print-app/
+ 9623  2021-04-02 17:05:08 root tail -f all.log 
+ 9624  2021-04-02 17:48:25 root echo $branch
+ 9625  2021-04-02 17:52:02 root ip a
+ 9626  2021-04-02 17:52:08 root cd /data/wwwroot/print-parent/
+ 9627  2021-04-02 17:52:09 root ll
+ 9628  2021-04-02 17:52:18 root git branch 
+ 9629  2021-04-02 13:57:26 root ls
+ 9630  2021-04-02 13:57:27 root cd ..
+ 9631  2021-04-02 13:57:27 root ls
+ 9632  2021-04-02 13:57:33 root cd data/wwwlogs/qpyx-app/
+ 9633  2021-04-02 13:57:36 root cd ..
+ 9634  2021-04-02 13:57:37 root ls
+ 9635  2021-04-02 13:57:38 root cd qpyx-w
+ 9636  2021-04-02 13:57:41 root cd qpyx-web/
+ 9637  2021-04-02 13:57:41 root ls
+ 9638  2021-04-02 13:57:44 root less all.l
+ 9639  2021-04-02 13:57:45 root less all.log 
+ 9640  2021-04-02 14:54:51 root cd ..
+ 9641  2021-04-02 14:54:52 root ls
+ 9642  2021-04-02 14:54:53 root cd qpyx-app/
+ 9643  2021-04-02 14:54:56 root less all.log 
+ 9644  2021-04-06 10:13:25 root cd 
+ 9645  2021-04-06 10:13:26 root ls
+ 9646  2021-04-06 10:13:31 root cd scripts/
+ 9647  2021-04-06 10:13:32 root ls
+ 9648  2021-04-06 10:13:35 root cd ..
+ 9649  2021-04-06 10:13:36 root ls
+ 9650  2021-04-06 10:13:36 root cd ..
+ 9651  2021-04-06 10:13:37 root ls
+ 9652  2021-04-06 10:13:41 root cd jenkins_script
+ 9653  2021-04-06 10:13:41 root ls
+ 9654  2021-04-06 10:13:48 root cat print-app-start.sh
+ 9655  2021-04-06 15:59:55 root cd /usr/local/openresty/nginx
+ 9656  2021-04-06 15:59:56 root ll
+ 9657  2021-04-06 16:00:02 root nginx -v
+ 9658  2021-04-06 16:00:34 root nginx -V
+ 9659  2021-04-06 16:07:26 root cat /etc/passwd
+ 9660  2021-04-06 16:09:44 root ll /home/
+ 9661  2021-04-06 16:10:58 root cat /etc/group
+ 9662  2021-04-06 10:37:00 root ls
+ 9663  2021-04-06 10:37:07 root cd ..
+ 9664  2021-04-06 10:37:08 root ls
+ 9665  2021-04-06 10:37:10 root cd data
+ 9666  2021-04-06 10:37:14 root cd wwwlogs
+ 9667  2021-04-06 10:37:15 root ls
+ 9668  2021-04-06 10:37:23 root cd print-app
+ 9669  2021-04-06 10:37:24 root ls
+ 9670  2021-04-06 10:37:33 root less all.log
+ 9671  2021-04-06 21:08:56 root java -version
+ 9672  2021-04-06 21:11:00 root history |grep jdk
+ 9673  2021-04-06 21:50:51 root cat /etc/profile.d/java.sh 
+ 9674  2021-04-06 16:53:53 root ls
+ 9675  2021-04-06 16:53:55 root cd ..
+ 9676  2021-04-06 16:53:55 root ls
+ 9677  2021-04-06 16:54:00 root cd data/wwwlogs/qpyx-app/
+ 9678  2021-04-06 16:54:01 root ls
+ 9679  2021-04-06 16:54:06 root tail -f all.log 
+ 9680  2021-04-06 20:59:37 root ls
+ 9681  2021-04-06 20:59:38 root cd ..
+ 9682  2021-04-06 20:59:38 root ;s
+ 9683  2021-04-06 20:59:39 root ls
+ 9684  2021-04-06 20:59:42 root cd qpyx-web/
+ 9685  2021-04-06 20:59:42 root ls
+ 9686  2021-04-06 20:59:45 root less all.log 
+ 9687  2021-04-06 21:00:00 root tail -f all.log 
+ 9688  2021-04-06 21:00:46 root less all.log 
+ 9689  2021-04-07 13:43:14 root ls
+ 9690  2021-04-07 13:43:15 root cd //
+ 9691  2021-04-07 13:43:22 root cd ../data/wwwlogs/qpyx-web/
+ 9692  2021-04-07 13:43:23 root ls
+ 9693  2021-04-07 13:43:25 root less all.log 
+ 9694  2021-04-07 13:52:52 root tail -f all.log 
+ 9695  2021-04-07 14:00:34 root less all.log 
+ 9696  2021-04-07 15:05:56 root ls
+ 9697  2021-04-07 15:05:59 root cd ..
+ 9698  2021-04-07 15:05:59 root ls
+ 9699  2021-04-07 15:06:02 root cd qpyx-app/
+ 9700  2021-04-07 15:06:03 root ls
+ 9701  2021-04-07 15:06:08 root less all.log 
+ 9702  2021-04-07 15:10:03 root tail -f all.log 
+ 9703  2021-04-08 10:21:27 root cd ../data/wwwlogs/print-app/
+ 9704  2021-04-08 10:21:32 root tail -f all.log 
+ 9705  2021-04-08 10:21:40 root tail -f all.log --lines 1000
+ 9706  2021-04-08 10:22:18 root tail -f all.log --lines 100
+ 9707  2021-04-08 14:09:09 root ls
+ 9708  2021-04-08 14:09:12 root cd ..
+ 9709  2021-04-08 14:09:15 root cd data
+ 9710  2021-04-08 14:09:16 root ls
+ 9711  2021-04-08 14:09:20 root cd wwwlogs
+ 9712  2021-04-08 14:09:21 root ls
+ 9713  2021-04-08 14:09:28 root cd print-app
+ 9714  2021-04-08 14:09:29 root ls
+ 9715  2021-04-08 14:09:38 root less all.log
+ 9716  2021-04-08 16:37:28 root ls
+ 9717  2021-04-08 16:37:35 root cd ..
+ 9718  2021-04-08 16:37:36 root ls
+ 9719  2021-04-08 16:37:39 root cd data
+ 9720  2021-04-08 16:37:39 root ls
+ 9721  2021-04-08 16:37:43 root cd wwwlogs
+ 9722  2021-04-08 16:37:44 root ls
+ 9723  2021-04-08 16:37:48 root cd print-web
+ 9724  2021-04-08 16:37:49 root ls
+ 9725  2021-04-08 16:38:05 root less all.log
+ 9726  2021-04-09 09:41:41 root cd  /data/wwwroot/light_life_web/
+ 9727  2021-04-09 09:41:50 root git branch
+ 9728  2021-04-09 09:42:15 root git checkout master
+ 9729  2021-04-09 09:42:25 root git branch
+ 9730  2021-04-09 09:42:39 root git pull
+ 9731  2021-04-09 09:43:09 root yarn install
+ 9732  2021-04-09 09:43:19 root yarn build-stage
+ 9733  2021-04-09 10:31:57 root vim /etc/profile
+ 9734  2021-04-09 10:32:22 root ll /etc/profile.d/
+ 9735  2021-04-09 10:33:03 root vim /etc/profile.d/bash_completion.sh 
+ 9736  2021-04-09 10:34:34 root vim /etc/profile.d/colorls.sh 
+ 9737  2021-04-09 09:33:19 root cd ..
+ 9738  2021-04-09 09:33:20 root ls
+ 9739  2021-04-09 09:33:22 root cd data
+ 9740  2021-04-09 09:33:23 root ls
+ 9741  2021-04-09 09:33:26 root cd wwwlogs
+ 9742  2021-04-09 09:33:27 root ls
+ 9743  2021-04-09 09:33:37 root cd print-web
+ 9744  2021-04-09 09:33:39 root ls
+ 9745  2021-04-09 09:33:45 root less all.log
+ 9746  2021-04-08 13:58:01 root ls
+ 9747  2021-04-08 13:58:02 root cd ..
+ 9748  2021-04-08 13:58:03 root ls
+ 9749  2021-04-08 13:58:07 root cd data/wwwlogs/qpyx-app/
+ 9750  2021-04-08 13:58:08 root ls
+ 9751  2021-04-08 13:58:10 root less all.log 
+ 9752  2021-04-09 13:53:33 root ls
+ 9753  2021-04-09 13:53:41 root less all.log 
+ 9754  2021-04-09 13:53:53 root tail -f all.log 
+ 9755  2021-04-09 14:00:05 root less all.log 
+ 9756  2021-04-09 14:03:31 root tail -f all.log 
+ 9757  2021-04-09 14:32:16 root less all.log 
+ 9758  2021-04-09 14:32:47 root tail -f all.log 
+ 9759  2021-04-12 09:50:08 root history |grep mysql
+ 9760  2021-04-12 09:50:21 root netstat -lntp
+ 9761  2021-04-12 09:50:50 root mysql -u root -poxuyow80
+ 9762  2021-04-12 15:47:10 root cd data
+ 9763  2021-04-12 15:47:10 root ls
+ 9764  2021-04-12 15:47:19 root cd ..
+ 9765  2021-04-12 15:47:20 root ls
+ 9766  2021-04-12 15:47:22 root cd data
+ 9767  2021-04-12 15:47:24 root ls
+ 9768  2021-04-12 15:47:27 root cd wwwlogs
+ 9769  2021-04-12 15:47:29 root ls
+ 9770  2021-04-12 15:47:34 root cd print_web
+ 9771  2021-04-12 15:47:35 root ls
+ 9772  2021-04-12 15:47:46 root cd print-web
+ 9773  2021-04-12 15:47:46 root ls
+ 9774  2021-04-12 15:47:56 root less all.log
+ 9775  2021-04-13 10:02:26 root cd ..
+ 9776  2021-04-13 10:02:27 root ls
+ 9777  2021-04-13 10:02:29 root cd data
+ 9778  2021-04-13 10:02:30 root ls
+ 9779  2021-04-13 10:02:34 root cd wwwlogs
+ 9780  2021-04-13 10:02:35 root ls
+ 9781  2021-04-13 10:02:39 root cd print-app
+ 9782  2021-04-13 10:02:40 root ls
+ 9783  2021-04-13 10:02:45 root less all.log
+ 9784  2021-04-13 13:52:53 root ls
+ 9785  2021-04-13 13:53:00 root cd data
+ 9786  2021-04-13 13:53:01 root ls
+ 9787  2021-04-13 13:53:04 root cd ..
+ 9788  2021-04-13 13:53:12 root ls
+ 9789  2021-04-13 13:55:54 root cd ls
+ 9790  2021-04-13 13:55:57 root ls
+ 9791  2021-04-12 16:03:13 root ls
+ 9792  2021-04-12 16:03:16 root cd ..
+ 9793  2021-04-12 16:03:16 root kls
+ 9794  2021-04-12 16:03:18 root ls
+ 9795  2021-04-12 16:03:24 root cd data/wwwlogs/qpyx-app/
+ 9796  2021-04-12 16:03:25 root ls
+ 9797  2021-04-12 16:03:27 root less all.log 
+ 9798  2021-04-14 14:22:03 root cd  /data/wwwroot/wow_print/
+ 9799  2021-04-14 14:22:04 root ll
+ 9800  2021-04-14 14:26:46 root echo '$NODE_ENV '
+ 9801  2021-04-14 14:26:52 root echo $NODE_ENV
+ 9802  2021-04-14 10:30:47 root cd ..
+ 9803  2021-04-14 10:30:48 root ls
+ 9804  2021-04-14 10:30:51 root cd data
+ 9805  2021-04-14 10:30:52 root ls
+ 9806  2021-04-14 10:31:07 root cd wwwlogs
+ 9807  2021-04-14 10:31:09 root ls
+ 9808  2021-04-14 10:31:17 root cd print-web
+ 9809  2021-04-14 10:31:18 root ls
+ 9810  2021-04-14 10:31:25 root less all.log
+ 9811  2021-04-14 11:49:25 root cd print-app
+ 9812  2021-04-14 11:49:29 root ls
+ 9813  2021-04-14 11:49:32 root cd ..
+ 9814  2021-04-14 11:49:36 root cd print-app
+ 9815  2021-04-14 11:49:37 root ls
+ 9816  2021-04-14 11:49:45 root less all.log
+ 9817  2021-04-14 14:06:54 root ls
+ 9818  2021-04-14 14:06:56 root cd data
+ 9819  2021-04-14 14:06:57 root ls
+ 9820  2021-04-14 14:07:00 root cd ..
+ 9821  2021-04-14 14:07:00 root ls
+ 9822  2021-04-14 14:07:03 root cd data
+ 9823  2021-04-14 14:07:05 root ls
+ 9824  2021-04-14 14:07:08 root cd wwwlogs
+ 9825  2021-04-14 14:07:09 root ls
+ 9826  2021-04-14 14:07:14 root cd print-ap[
+ 9827  2021-04-14 14:07:17 root cd print-app
+ 9828  2021-04-14 14:07:18 root ls
+ 9829  2021-04-14 14:07:24 root less all.log
+ 9830  2021-04-14 16:01:48 root ls
+ 9831  2021-04-14 16:01:52 root cd ..
+ 9832  2021-04-14 16:01:53 root ls
+ 9833  2021-04-14 16:01:56 root cd data
+ 9834  2021-04-14 16:01:56 root ls
+ 9835  2021-04-14 16:01:59 root cd wwwlogs
+ 9836  2021-04-14 16:02:00 root ls
+ 9837  2021-04-14 16:02:06 root cd print-app
+ 9838  2021-04-14 16:02:07 root ls
+ 9839  2021-04-14 16:02:12 root less all.log
+ 9840  2021-04-14 16:15:00 root grep "[http-nio-8201-exec-4]" all.log
+ 9841  2021-04-14 16:15:14 root history
+ 9842  2021-04-14 16:16:09 root grep "[http-nio-8201-exec-4]" all.log
+ 9843  2021-04-14 16:16:26 root grep "http-nio-8201-exec-4" all.log
+ 9844  2021-04-14 16:17:12 root grep -C 5 "http-nio-8201-exec-4" all.log
+ 9845  2021-04-14 16:22:01 root less all.log
+ 9846  2021-04-14 15:25:09 root free -m
+ 9847  2021-04-14 14:21:06 root ll
+ 9848  2021-04-14 14:22:25 root cd。。
+ 9849  2021-04-14 14:22:31 root cd ..
+ 9850  2021-04-14 14:22:33 root ll
+ 9851  2021-04-14 14:22:39 root cd data
+ 9852  2021-04-14 14:22:42 root ll
+ 9853  2021-04-14 14:22:48 root cd wwwlogs
+ 9854  2021-04-14 14:22:54 root ll
+ 9855  2021-04-14 14:29:03 root cd print-app
+ 9856  2021-04-14 14:29:04 root ll
+ 9857  2021-04-14 14:33:20 root tailf all.log
+ 9858  2021-04-15 09:56:14 root vim .bashrc 
+ 9859  2021-04-15 10:01:32 root ncv
+ 9860  2021-04-15 10:01:34 root ls
+ 9861  2021-04-15 10:01:35 root ll
+ 9862  2021-04-15 10:01:40 root cat testwww.qingpinyouxuan.com.conf 
+ 9863  2021-04-15 10:44:41 root ls
+ 9864  2021-04-15 10:44:44 root cd ..
+ 9865  2021-04-15 10:44:47 root cd data
+ 9866  2021-04-15 10:44:47 root ls
+ 9867  2021-04-15 10:44:50 root cd wwwlogs
+ 9868  2021-04-15 10:44:56 root cd print-app
+ 9869  2021-04-15 10:44:57 root ls
+ 9870  2021-04-15 10:48:03 root less
+ 9871  2021-04-15 10:48:08 root less all.log
+ 9872  2021-04-15 11:40:59 root cd ..
+ 9873  2021-04-15 11:41:07 root cd print-web
+ 9874  2021-04-15 11:41:08 root ls
+ 9875  2021-04-15 11:26:24 root cd ../data/wwwlogs/print-web/
+ 9876  2021-04-15 11:26:24 root ls
+ 9877  2021-04-15 11:26:27 root tail -f all.log 
+ 9878  2021-04-15 16:08:16 root cd..
+ 9879  2021-04-15 16:08:23 root ll
+ 9880  2021-04-15 16:08:31 root cd ..
+ 9881  2021-04-15 16:08:33 root ll
+ 9882  2021-04-15 16:08:38 root cd data
+ 9883  2021-04-15 16:08:40 root ll
+ 9884  2021-04-15 16:08:49 root cd wwwlogs
+ 9885  2021-04-15 16:08:50 root ll
+ 9886  2021-04-15 16:09:13 root cd print-app
+ 9887  2021-04-15 16:09:15 root ll
+ 9888  2021-04-15 16:09:23 root tailf all.log
+ 9889  2021-04-15 16:17:44 root ls
+ 9890  2021-04-15 16:17:47 root cd ..
+ 9891  2021-04-15 16:17:48 root ls
+ 9892  2021-04-15 16:17:50 root cd data
+ 9893  2021-04-15 16:17:51 root ls
+ 9894  2021-04-15 16:17:54 root cd wwwlogs
+ 9895  2021-04-15 16:17:54 root ls
+ 9896  2021-04-15 16:17:58 root cd print-app
+ 9897  2021-04-15 16:17:59 root ls
+ 9898  2021-04-15 16:18:03 root cd all.log
+ 9899  2021-04-15 16:18:08 root less all.log
+ 9900  2021-04-15 16:25:35 root cd ../data/wwwlogs/print-app/
+ 9901  2021-04-15 16:25:43 root tail -f all.log --lines 1000
+ 9902  2021-04-15 16:25:58 root cat all.log | grep "合成失败"
+ 9903  2021-04-15 16:26:02 root cat all.log | grep "合成"
+ 9904  2021-04-15 16:27:10 root cat all.log | grep "442702175"
+ 9905  2021-04-15 16:27:48 root cat all.log | grep "1933"
+ 9906  2021-04-15 16:28:19 root cat all.log | grep "2021-04-15 16:03:47"
+ 9907  2021-04-15 16:28:24 root cat all.log | grep "^2021-04-15 16:03:47"
+ 9908  2021-04-15 16:29:14 root cat all.log | grep "PNo1618473813442702175"
+ 9909  2021-04-15 16:29:35 root cat all.log | grep "2021-04-15 16:03:46"
+ 9910  2021-04-15 16:29:58 root cat all.log | grep "2021-04-15 16:03:47"
+ 9911  2021-04-15 16:30:03 root cat all.log | grep "^2021-04-15 16:03:47"
+ 9912  2021-04-15 16:30:08 root cat all.log | grep "^2021-04-15 16:03:47" -C 10
+ 9913  2021-04-15 16:32:03 root pm2 logs 2
+ 9914  2021-04-15 16:32:09 root tail -f all.log 
+ 9915  2021-04-15 16:37:48 root cd ..
+ 9916  2021-04-15 16:37:50 root ls
+ 9917  2021-04-15 16:37:51 root cd data
+ 9918  2021-04-15 16:37:52 root ls
+ 9919  2021-04-15 16:37:56 root cd wwwlogs
+ 9920  2021-04-15 16:37:57 root ls
+ 9921  2021-04-15 16:38:11 root cd print-app
+ 9922  2021-04-15 16:38:12 root ls
+ 9923  2021-04-15 16:38:17 root cd all.log
+ 9924  2021-04-15 16:38:22 root less all.log
+ 9925  2021-04-15 21:12:22 root ip a
+ 9926  2021-04-15 21:12:28 root cd  /data/wwwroot/wow_print_web/
+ 9927  2021-04-15 21:12:29 root ll
+ 9928  2021-04-15 21:12:38 root vim build-stage.sh 
+ 9929  2021-04-15 19:23:47 root ls
+ 9930  2021-04-15 19:23:48 root cd data
+ 9931  2021-04-15 19:25:06 root ls
+ 9932  2021-04-15 19:47:27 root cd ..
+ 9933  2021-04-15 19:47:28 root ls
+ 9934  2021-04-15 19:47:31 root cd data
+ 9935  2021-04-15 19:47:32 root ls
+ 9936  2021-04-15 19:47:34 root cd wwwlogs
+ 9937  2021-04-15 19:47:35 root ls
+ 9938  2021-04-15 19:47:45 root cd print-app
+ 9939  2021-04-15 19:47:46 root ls
+ 9940  2021-04-15 19:47:50 root less all.lg
+ 9941  2021-04-15 19:47:54 root less all.log
+ 9942  2021-04-15 20:09:07 root cd ..
+ 9943  2021-04-15 20:09:13 root cls
+ 9944  2021-04-15 20:09:15 root ls
+ 9945  2021-04-15 20:09:19 root cd data
+ 9946  2021-04-15 20:09:20 root ls
+ 9947  2021-04-15 20:09:23 root cd wwwlogs
+ 9948  2021-04-15 20:09:30 root cd print-app
+ 9949  2021-04-15 20:09:31 root ls
+ 9950  2021-04-15 20:09:45 root less all.log
+ 9951  2021-04-15 20:14:38 root grep -C 10 "队列处理-操作合并图片:" all.log
+ 9952  2021-04-15 20:55:58 root ls
+ 9953  2021-04-15 20:56:08 root cd ..
+ 9954  2021-04-15 20:56:10 root cd data
+ 9955  2021-04-15 20:56:13 root ls
+ 9956  2021-04-15 20:56:18 root cd wwwlogs
+ 9957  2021-04-15 20:56:28 root ls
+ 9958  2021-04-15 20:56:33 root cd print-app
+ 9959  2021-04-15 20:56:34 root ls
+ 9960  2021-04-15 20:59:59 root less all.log
+ 9961  2021-04-16 10:47:22 root cd /data/wwwroot/
+ 9962  2021-04-16 10:47:24 root ll
+ 9963  2021-04-16 11:14:53 root cd /data/wwwroot/wow_print_web/
+ 9964  2021-04-16 11:14:54 root ll
+ 9965  2021-04-16 11:15:02 root cat build-stage.sh 
+ 9966  2021-04-16 11:16:03 root cat build-production.sh
+ 9967  2021-04-16 10:56:41 root ls
+ 9968  2021-04-16 10:56:42 root cd ..
+ 9969  2021-04-16 10:56:43 root ls
+ 9970  2021-04-16 10:56:48 root cd data/wwwlogs/qpyx-app/
+ 9971  2021-04-16 10:56:50 root ls
+ 9972  2021-04-16 10:56:52 root less all.log 
+ 9973  2021-04-16 10:59:20 root tail -f all.
+ 9974  2021-04-16 10:59:22 root tail -f all.log 
+ 9975  2021-04-16 10:59:41 root ls
+ 9976  2021-04-16 10:59:52 root ll
+ 9977  2021-04-16 10:59:59 root cd ..
+ 9978  2021-04-16 11:00:00 root ls
+ 9979  2021-04-16 11:00:03 root cd qpyx-app/
+ 9980  2021-04-16 11:00:05 root less all.log 
+ 9981  2021-04-16 11:01:37 root ls
+ 9982  2021-04-16 11:01:44 root less err.log 
+ 9983  2021-04-16 11:02:13 root less all.log 
+ 9984  2021-04-16 11:03:00 root tail -f all.log 
+ 9985  2021-04-16 20:15:24 root ls
+ 9986  2021-04-16 20:15:28 root cd data
+ 9987  2021-04-16 20:15:28 root ls
+ 9988  2021-04-16 20:15:33 root cd data
+ 9989  2021-04-16 20:15:34 root ls
+ 9990  2021-04-16 20:15:39 root cd ..
+ 9991  2021-04-16 20:15:40 root ls
+ 9992  2021-04-16 20:15:42 root cd data
+ 9993  2021-04-16 20:15:42 root ls
+ 9994  2021-04-16 20:15:47 root cd wwwlogs
+ 9995  2021-04-16 20:18:27 root ls
+ 9996  2021-04-16 20:18:58 root history
+[root@test-qs-web03 wwwlogs]# 
